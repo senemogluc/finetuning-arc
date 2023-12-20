@@ -1,0 +1,75 @@
+Here's a step-by-step reasoning for each case:
+
+Case 0:
+The input grid consists of several blocks of the same color (3, 4, and 7). The transformation rule suggests that objects persist despite noise or occlusion by other objects. Therefore, we can remove the background (0) and keep the main objects in the output grid.
+
+Output:
+  [0, 0, 0, 3, 3, 3, 0, 0, 0, 0]
+  [0, 0, 0, 3, 3, 3, 0, 0, 0, 0]
+  [0, 0, 0, 3, 3, 3, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 4, 4, 4, 0, 0, 0, 0]
+  [0, 0, 0, 4, 4, 4, 0, 0, 0, 0]
+  [0, 0, 0, 4, 4, 4, 0, 0, 0, 0]
+  [0, 0, 0, 4, 4, 4, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 7, 7, 7, 0, 0, 0, 0]
+  [0, 0, 0, 7, 7, 7, 0, 0, 0, 0]
+  [0, 0, 0, 7, 7, 7, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Case 1:
+The input grid consists of several blocks of the same color (1, 8, and 6). The transformation rule suggests that objects persist despite noise or occlusion by other objects. Therefore, we can remove the background (0) and keep the main objects in the output grid.
+
+Output:
+  [0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0]
+  [0, 0, 7, 7, 7, 7, 7, 7, 7, 7, 0, 0]
+  [0, 0, 7, 7, 7, 7, 7, 7, 7, 7, 0, 0]
+  [0, 0, 7, 7, 7, 7, 7, 7, 7, 7, 0, 0]
+  [0, 0, 0, 0, 0, 8, 8, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 8, 8, 0, 0, 0, 0, 0]
+  [0, 0, 0, 6, 6, 6, 6, 6, 6, 0, 0, 0]
+  [0, 0, 0, 6, 6, 6, 6, 6, 6, 0, 0, 0]
+  [0, 0, 0, 6, 6, 6, 6, 6, 6, 0, 0, 0]
+  [0, 0, 0, 6, 6, 6, 6, 6, 6, 0, 0, 0]
+  [0, 0, 0, 0, 5, 5, 5, 5, 0, 0, 0, 0]
+  [0, 0, 0, 0, 5, 5, 5, 5, 0, 0, 0, 0]
+  [0, 0, 0, 0, 5, 5, 5, 5, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 3, 3, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 3, 3, 0, 0, 0, 0, 0]
+
+Case 2:
+The input grid consists of several blocks of the same color (2, 9, and 4). The transformation rule suggests that objects persist despite noise or occlusion by other objects. Therefore, we can remove the background (0) and keep the main objects in the output grid.
+
+Output:
+  [0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0]
+  [0, 0, 9, 9, 9, 0]
+  [0, 9, 9, 9, 9, 9]
+  [0, 9, 9, 9, 9, 9]
+  [0, 0, 9, 9, 9, 0]
+  [0, 0, 0, 0, 0, 0]
+  [0, 0, 4, 4, 4, 0]
+  [0, 0, 0, 4, 0, 0]
+  [0, 0, 0, 4, 0, 0]
+
+Case 3:
+The input grid consists of several blocks of the same color (3, 4, and 7). The transformation rule suggests that objects persist despite noise or occlusion by other objects. Therefore, we can remove the background (0) and keep the main objects in the output grid.
+
+Output:
+  [0, 0, 0, 0, 3, 3, 0, 0, 0, 0]
+  [0, 0, 0, 0, 3, 3, 0, 0, 0, 0]
+  [0, 0, 1, 1, 1, 1, 1, 1, 0, 0]
+  [0, 0, 1, 1, 1, 1, 1, 1, 0, 0]
+  [0, 0, 1, 1, 1, 1, 1, 1, 0, 0]
+  [0, 0, 1, 1, 1, 1, 1, 1, 0, 0]
+  [0, 0, 0, 0, 4, 4, 0, 0, 0, 0]
+  [0, 0, 0, 0, 4, 4, 0, 0, 0, 0]
+  [0, 0, 0, 2, 2, 2, 2, 0, 0, 0]
+  [0, 0, 0, 2, 2, 2, 2, 0, 0, 0]
+  [0, 0, 0, 2, 2, 2, 2, 0, 0, 0]

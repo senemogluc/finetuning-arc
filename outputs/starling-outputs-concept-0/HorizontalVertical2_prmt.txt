@@ -1,0 +1,56 @@
+Here's a step-by-step reasoning for each case:
+
+Case 0:
+The input grid has a repeating pattern with two main objects (2 and 3) and one background object (0). The transformation rule should maintain this pattern. Since the last given input is just a repetition of the first few rows, we can apply the same transformation rule to obtain the output grid.
+
+Case 1:
+The input grid has a repeating pattern with two main objects (4 and 8) and one background object (0). The transformation rule should maintain this pattern. Since the last given input is just a repetition of the first few rows, we can apply the same transformation rule to obtain the output grid.
+
+Case 2:
+The input grid has a repeating pattern with three main objects (1, 4, and 6) and one background object (0). The transformation rule should maintain this pattern. Since the last given input is just a repetition of the first few rows, we can apply the same transformation rule to obtain the output grid.
+
+For all cases, the output grids are as follows:
+
+Case 0 Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0]
+  [0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0]
+  [0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 0]
+  [0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0]
+  [0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 3, 0]
+  [0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Case 1 Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 4, 4, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 8, 8, 8, 8, 8, 0, 1, 6, 1, 6, 1, 0, 0]
+  [0, 4, 4, 4, 4, 4, 0, 1, 6, 1, 6, 1, 0, 0]
+  [0, 8, 8, 8, 8, 8, 0, 1, 6, 1, 6, 1, 0, 0]
+  [0, 4, 4, 4, 4, 4, 0, 1, 6, 1, 6, 1, 0, 0]
+  [0, 8, 8, 8, 8, 8, 0, 1, 6, 1, 6, 1, 0, 0]
+  [0, 4, 4, 4, 4, 4, 0, 1, 6, 1, 6, 1, 0, 0]
+  [0, 4, 4, 4, 4, 4, 0, 1, 6, 1, 6, 1, 0, 0]
+  [0, 4, 4, 4, 4, 4, 0, 1, 6, 1, 6, 1, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Case 2 Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4, 1, 4]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4, 1, 4]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 4, 1, 4]
+  [0, 6, 1, 6, 1, 6, 0, 0, 0, 0, 1, 4, 1, 4]
+  [0, 6, 1, 6, 1, 6, 0, 0, 0, 0, 1, 4, 1, 4]
+  [0, 6, 1, 6, 1, 6, 0, 0, 0, 0, 1, 4, 1, 4]
+  [0, 6, 1, 6, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 6, 1, 6, 1, 6, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1]
+  [0, 0, 5, 5, 5, 5, 5, 5, 0, 0, 7, 7, 7, 7]
+  [0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 7, 7, 7, 7]
+  [0, 0, 5, 5, 5, 5, 5, 5, 0, 0, 7, 7, 7, 7]
+  [0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1]
+  [0, 0, 5, 5, 5, 5, 5, 5, 0, 0, 7, 7, 7, 7]

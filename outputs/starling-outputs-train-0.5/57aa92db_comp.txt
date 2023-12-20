@@ -1,0 +1,7 @@
+Here are some possible transformations that can be applied to the input grid:
+
+1. Merge adjacent objects with the same color into a single object.
+2. Move objects from one area to another, but keep track of their original location through indices or coordinates. This is useful when you need to identify which objects belong together and which ones don't.
+3. Sort objects by size, shape, or position in the grid.
+4. Rotate objects while maintaining their relative positions within the grid. This can be useful for identifying patterns or sequences of objects.
+5. Translate objects horizontally or vertically within the grid, but keep track of their original location through indices or coordinates. This helps to identify patterns or sequences of objects that may not be immediately obvious.

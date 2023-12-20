@@ -1,0 +1,27 @@
+Case 3 Input:
+  [0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 5, 0, 0, 0, 0]
+  [0, 8, 8, 8, 8, 8, 0, 0]
+  [0, 8, 8, 8, 8, 8, 0, 0]
+  [0, 0, 0, 5, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0]
+
+To find the output grid for this input, we can follow these steps:
+
+1. Identify objects and their relationships. In this case, there are two main objects: a row of 5s (including the background) and a column of 8s. Both of these objects persist throughout the grid. The two objects do not interact physically.
+2. Observe the transformation rule: same numbers that are adjacent to each other are part of the same object, and objects are assumed to persist despite noise or occlusion by other objects. In this case, the 5s form a single object, while the 8s also form a single object. Neither object is affected by the presence of noise (the 0s) or occlusion by other objects.
+3. Recognize tasks involving counting or sorting objects. In this case, there are no specific numerical aspects to consider, as the main task is to identify the objects and their relationships.
+4. Apply counting and basic arithmetic if necessary. As mentioned earlier, we have two main objects: a row of 5s (including the background) and a column of 8s. There are 6 5s in total, and 2 rows of 8s (forming a single object).
+
+Based on these observations, the output grid should be:
+
+  [0, 0, 0, 5, 0, 0, 0, 0]
+  [0, 0, 0, 5, 0, 0, 0, 0]
+  [0, 8, 8, 8, 8, 8, 0, 0]
+  [0, 8, 8, 8, 8, 8, 0, 0]
+  [0, 0, 0, 5, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0]

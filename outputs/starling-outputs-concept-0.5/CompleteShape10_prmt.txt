@@ -1,0 +1,24 @@
+Here's the reasoning for each step and the final output grid:
+
+1. The first row consists of all zeros, which means it is not part of any object. So, we can ignore this row in our transformation.
+2. The second row has two 2's adjacent to each other, forming a single object. We can merge these two 2's into one object.
+3. The third row also has two 2's adjacent to each other. Merge them as well.
+4. The fourth and fifth rows have two 2's adjacent to each other in the same column. Merge these pairs of 2's.
+5. The sixth row has a pair of 2's adjacent to each other, but they are not part of the same object from the previous rows. Leave them as is.
+6. The seventh and eighth rows have two 2's adjacent to each other in the same column. Merge these pairs of 2's.
+7. The ninth row has a pair of 2's adjacent to each other, but they are not part of the same object from previous rows. Leave them as is.
+
+Based on this reasoning, here's the output grid for the last input:
+
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0]
+  [2, 2, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0]
+  [2, 2, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0]
+  [2, 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0]
+  [2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0]
+  [2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0]
+  [2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]

@@ -1,0 +1,19 @@
+I apologize for the confusion in my previous response. Here's the correct output for the last input case:
+
+Case 3:
+
+Input:
+  [7, 7, 7]
+  [7, 3, 7]
+  [7, 7, 7]
+  [1, 0, 0]
+  [1, 0, 0]
+
+Output:
+  [7, 7, 7]
+  [7, 3, 7]
+  [7, 7, 7]
+  [0, 0, 0]
+  [7, 7, 7]
+  [7, 3, 7]
+  [7, 7, 7]

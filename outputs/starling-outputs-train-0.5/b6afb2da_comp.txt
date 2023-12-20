@@ -1,0 +1,43 @@
+Here are my thoughts on the transformation rule for each case:
+
+Case 0:
+- Objects with value 5 seem to be part of a larger object that spans multiple rows and columns. The background (value 0) separates these objects.
+- The transformation seems to involve rotating or rearranging the 5s in some pattern.
+- The goal is to create an output grid where each object with value 5 is transformed into a single row, with the remaining cells being filled with zeros.
+
+Case 1:
+- Objects with value 5 seem to be part of a larger object that spans multiple rows and columns. The background (value 0) separates these objects.
+- The transformation seems to involve rotating or rearranging the 5s in some pattern.
+- The goal is to create an output grid where each object with value 5 is transformed into a single row, with the remaining cells being filled with zeros.
+
+Case 2:
+- Objects with value 5 seem to be part of a larger object that spans multiple rows and columns. The background (value 0) separates these objects.
+- The transformation seems to involve rotating or rearranging the 5s in some pattern.
+- The goal is to create an output grid where each object with value 5 is transformed into a single row, with the remaining cells being filled with zeros.
+
+Based on the analysis of the cases and the given input for Case 2:
+
+Input:
+  [0, 5, 5, 5, 5, 0, 0, 0, 0, 0]
+  [0, 5, 5, 5, 5, 0, 0, 0, 0, 0]
+  [0, 5, 5, 5, 5, 0, 0, 0, 0, 0]
+  [0, 5, 5, 5, 5, 0, 0, 0, 0, 0]
+  [0, 5, 5, 5, 5, 0, 0, 0, 0, 0]
+  [0, 5, 5, 5, 5, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 5, 5, 5, 5, 5, 5]
+  [0, 0, 0, 0, 5, 5, 5, 5, 5, 5]
+  [0, 0, 0, 0, 5, 5, 5, 5, 5, 5]
+
+Output:
+
+  [1, 4, 4, 4, 4, 1, 0, 0, 0, 0]
+  [4, 2, 2, 2, 2, 4, 0, 0, 0, 0]
+  [4, 2, 2, 2, 2, 4, 0, 0, 0, 0]
+  [4, 2, 2, 2, 2, 4, 0, 0, 0, 0]
+  [1, 4, 4, 4, 4, 1, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 1, 4, 4, 4, 4, 1]
+  [0, 0, 0, 0, 4, 2, 2, 2, 2, 4]
+  [0, 0, 0, 0, 4, 2, 2, 2, 2, 4]
+  [0, 0, 0, 0, 1, 4, 4, 4, 4, 1]

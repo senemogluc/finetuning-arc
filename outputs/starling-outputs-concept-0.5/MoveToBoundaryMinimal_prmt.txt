@@ -1,0 +1,40 @@
+Case 2:
+
+To determine the transformation rule, we can analyze the patterns in the given input. Here, we have a series of rows with a single non-zero value (1) followed by a row with multiple zeros and a non-zero value (7). The pattern repeats itself for each row. 
+
+Based on this observation, it's reasonable to assume that the transformation rule involves rearranging the grid in such a way that the non-zero values are grouped together while maintaining their relative positions within the rows. 
+
+To achieve this, we can follow these steps:
+
+1. Identify all non-zero values and their locations.
+2. For each row with a single non-zero value (1), replace it with a row containing only that non-zero value.
+3. For each row with multiple zeros followed by a non-zero value (7), place the non-zero value at the end of the previous row, and fill the remaining positions in the current row with zeros.
+4. Ensure that the relative positions of the non-zero values are maintained within their rows. 
+
+Applying these steps to the last input:
+
+Input:
+  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 0, 0, 0, 0, 0, 0, 7, 0, 0]
+  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Output:
+  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 7, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+This transformation rule has been applied to the previous input-output pairs as well.

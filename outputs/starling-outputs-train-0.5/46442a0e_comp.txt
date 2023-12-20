@@ -1,0 +1,14 @@
+Based on the transformation rules induced from previous input-output pairs, we can generate the following output grid for the last given input grid:
+
+Input:
+  [1, 4, 1]
+  [4, 9, 4]
+  [9, 1, 9]
+
+Output:
+  [1, 4, 1, 4, 1, 4]
+  [4, 9, 4, 9, 4, 9]
+  [1, 4, 1, 4, 1, 4]
+  [9, 4, 9, 4, 9, 4]
+  [4, 9, 4, 9, 4, 9]
+  [1, 4, 1, 4, 1, 4]

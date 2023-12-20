@@ -1,0 +1,64 @@
+Here's the reasoning for each step and then the final output grid:
+
+1. The first row has all zeros, so we can keep it as is.
+2. In the second row, there are three 3's in a row, so we can merge them into one object with a size of 3x1. This creates an empty space at the end of the row that we can fill later. The transformed grid becomes:
+   [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   ... (rest of the grid remains unchanged)
+
+3. In the third row, there are three 3's in a row, so we can merge them into one object with a size of 3x1. This creates an empty space at the end of the row that we can fill later. The transformed grid becomes:
+   [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   ... (rest of the grid remains unchanged)
+
+4. In the fourth row, there are three 3's in a column, so we can merge them into one object with a size of 1x3. This creates an empty space at the beginning and end of the row that we can fill later. The transformed grid becomes:
+   [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   ... (rest of the grid remains unchanged)
+
+5. In the fifth row, there are three 3's in a column, so we can merge them into one object with a size of 1x3. This creates an empty space at the beginning and end of the row that we can fill later. The transformed grid becomes:
+   [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   ... (rest of the grid remains unchanged)
+
+6. In the sixth row, there are three 3's in a column, so we can merge them into one object with a size of 1x3. This creates an empty space at the beginning and end of the row that we can fill later. The transformed grid becomes:
+   [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   ... (rest of the grid remains unchanged)
+
+7. In the seventh row, there are three 3's in a column, so we can merge them into one object with a size of 1x3. This creates an empty space at the beginning and end of the row that we can fill later. The transformed grid becomes:
+   [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   ... (rest of the grid remains unchanged)
+
+8. In the eighth row, there are three 3's in a column, so we can merge them into one object with a size of 1x3. This creates an empty space at the beginning and end of the row that we can fill later. The transformed grid becomes:
+   [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   ... (rest of the grid remains unchanged)
+
+9. In the ninth row, there are three 3's in a column, so we can merge them into one object with a size of 1x3. This creates an empty space at the beginning and end of the row that we can fill later. The transformed grid becomes:
+   [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   ... (rest of the grid remains unchanged)
+
+10. In the tenth row, there are three 3's in a column, so we can merge them into one object with a size of 1x3. This creates an empty space at the beginning and end of the row that we can fill later. The transformed grid becomes:
+    [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ... (rest of the grid remains unchanged)
+
+11. In the eleventh row, there are three 3's in a column, so we can merge them into one object with a size of 1x3. This creates an empty space at the beginning and end of the row that we can fill later. The transformed grid becomes:
+    [3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ... (rest of the grid remains unchanged)
+
+12. In the twelfth row, there are three 3's in a column, so we can merge them into one object with a size of 1x3. This creates an empty space at the beginning and end of

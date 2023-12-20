@@ -1,0 +1,56 @@
+Here are the steps to find the transformation rule and apply it to the last input grid:
+
+1. Identify adjacent objects with the same color (number) in the input grids.
+2. For each object, determine its size by counting the number of cells it occupies.
+3. Calculate the average size of all objects in the grid.
+4. Scale each object's size proportionally to the average size while maintaining their relative positions.
+5. Apply the scaling transformation to the last input grid.
+
+Applying these steps to the last input grid:
+
+1. Adjacent objects are found as follows:
+
+   - Top-left object (8): 3x3 cells
+   - Bottom-center object (2): 2x2 cells
+
+2. Object sizes:
+
+   - Top-left object (8): 9 cells
+   - Bottom-center object (2): 4 cells
+
+3. Average size: (9 + 4) / 2 = 6.5 cells
+
+4. Scale each object proportionally to the average size:
+
+   - Top-left object (8): 9 * (6.5 / 9) = 6.5 cells
+   - Bottom-center object (2): 4 * (6.5 / 4) = 6.5 cells
+
+5. Apply the scaling transformation to the last input grid:
+
+Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Here's the output of the last input grid:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 6.5, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]

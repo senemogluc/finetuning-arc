@@ -1,0 +1,33 @@
+Based on the provided input and transformation rules from previous cases, we can infer the following transformation rule for this case:
+
+1. Identify objects by grouping adjacent same-valued cells (same numbers).
+2. Count the number of occurrences of each object in the grid.
+3. Double the count of each object and assign the doubled value to all the cells belonging to that object.
+4. If an object is not present in a row or column, fill it with 0.
+5. Ensure the output grid has the same dimensions as the input grid.
+
+For the last input:
+
+Input:
+  [1, 1, 1]
+  [0, 1, 0]
+  [0, 1, 0]
+  [1, 1, 1]
+  [0, 1, 0]
+  [0, 1, 0]
+
+Objects:
+- Object 1: [1, 1, 1] (3 instances)
+- Object 2: [0, 1, 0] (2 instances)
+
+Doubled count and assigned values:
+- Object 1: [2, 2, 2] (6 instances)
+- Object 2: [0, 2, 0] (4 instances)
+
+Output grid:
+  [2, 2, 2]
+  [0, 2, 0]
+  [0, 2, 0]
+  [2, 2, 2]
+  [0, 2, 0]
+  [0, 2, 0]

@@ -1,0 +1,38 @@
+The transformation rule focuses on recognizing tasks involving physical contact between objects and counting or sorting objects. In this case, there are no apparent tasks involving counting or sorting, and the main focus should be on identifying objects with adjacent same numbers and their transformations.
+
+Here's a step-by-step breakdown of the transformation:
+
+1. Identify objects with adjacent same numbers.
+2. Group these objects into larger groups if they are connected horizontally or vertically.
+3. Transform the output grid based on the size and shape of these groups.
+4. Ensure that the transformation is consistent across all input-output pairs.
+
+Let's apply this rule to the last input grid:
+
+Input:
+  [0, 0, 0, 0, 0, 7, 7, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 7, 7, 7, 7, 0, 0, 0, 0]
+  [0, 0, 0, 7, 7, 7, 7, 7, 7, 0, 0, 0]
+  [0, 0, 7, 7, 7, 7, 7, 7, 0, 7, 0, 0]
+  [0, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 0]
+  [7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7]
+  [0, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 0]
+  [0, 0, 7, 7, 7, 7, 7, 7, 7, 7, 0, 0]
+  [0, 0, 0, 7, 7, 7, 7, 7, 7, 0, 0, 0]
+  [0, 0, 0, 0, 7, 7, 7, 7, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 7, 7, 0, 0, 0, 0, 0]
+
+Output:
+  [0, 0, 0, 0, 0, 7, 7, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 7, 7, 7, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 7, 7, 7, 7, 0, 0, 0]
+  [0, 0, 0, 0, 7, 7, 7, 7, 0, 7, 0, 0]
+  [0, 0, 0, 7, 7, 7, 7, 7, 7, 7, 7, 0]
+  [0, 0, 0, 7, 7, 7, 7, 7, 7, 7, 7, 7]
+  [0, 0, 7, 7, 7, 7, 7, 7, 7, 7, 7, 0]
+  [0, 0, 0, 7, 7, 7, 7, 7, 7, 7, 0, 0]
+  [0, 0, 0, 0, 7, 7, 7, 7, 7, 0, 0, 0]
+  [0, 0, 0, 0, 0, 7, 7, 7, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0]
+
+This output grid is consistent with the transformation rule and the previous input-output pairs.

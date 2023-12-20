@@ -1,0 +1,38 @@
+Here's a possible transformation rule based on the given cases and priors:
+
+1. Identify adjacent pairs with the same color (number).
+2. If an object has two or more colors, replace all its colors with the maximum value among them.
+3. For each unique color, create a new grid with the same dimensions as the input grid, initialized with zeros.
+4. For each cell in the input grid with a non-zero value, copy the corresponding cell from the output grid (step 3) and place it at the same position in the new grid. If the cell is empty in the output grid, leave it as zero.
+5. If an object has only one color, replicate it horizontally or vertically to fill the entire object.
+6. If an object has two colors, check if they are adjacent diagonally. If so, perform a 90-degree rotation and place the rotated object in the output grid. If not, copy the original object as is.
+7. For each unique color, perform steps 4 and 5 to create the final output grid.
+
+Applying this transformation rule to the last input:
+
+Input:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 3, 3, 3, 0]
+  [0, 0, 0, 0, 0, 0, 3, 3, 3, 0]
+  [0, 0, 0, 0, 0, 0, 3, 3, 3, 0]
+  [0, 0, 0, 3, 3, 3, 0, 0, 0, 0]
+  [0, 0, 0, 3, 3, 3, 0, 0, 0, 0]
+  [0, 0, 0, 3, 3, 3, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Output:
+
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 3, 3, 3, 3, 0, 0, 0, 0]
+  [0, 0, 3, 3, 3, 3, 0, 0, 0, 0]
+  [0, 0, 3, 3, 3, 3, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 3, 3, 3, 3, 0, 0, 0, 0]
+  [0, 0, 3, 3, 3, 3, 0, 0, 0, 0]
+
+This output grid is consistent with the transformation rule and the given priors.

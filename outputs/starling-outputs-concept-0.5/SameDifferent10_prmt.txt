@@ -1,0 +1,18 @@
+Case 4:
+
+Input:
+  [0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0]
+  [0, 2, 2, 2, 2, 2, 0, 5, 0, 2, 2, 2, 2, 2, 0]
+  [0, 2, 3, 3, 3, 2, 0, 5, 0, 2, 3, 3, 3, 2, 0]
+  [0, 2, 3, 3, 3, 2, 0, 5, 0, 2, 3, 3, 3, 2, 0]
+  [0, 2, 2, 2, 2, 2, 0, 5, 0, 2, 2, 2, 2, 2, 0]
+  [0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0]
+
+Output:
+  [0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0]
+  [0, 2, 2, 2, 2, 2, 0, 5, 0, 2, 2, 2, 2, 2, 0]
+  [0, 2, 3, 3, 3, 2, 0, 5, 0, 2, 3, 3, 3, 2, 0]
+  [0, 2, 3, 3, 3, 2, 0, 5, 0, 2, 3, 3, 3, 2, 0]
+  [0, 2, 2, 2, 2, 2, 0, 5, 0, 2, 2, 2, 2, 2, 0]
+
+In this case, the transformation rule is to maintain the same numbered objects in their original positions and form a grid that has the same size as the input grid. The output grid will have the same objects and arrangement as in the input grid.

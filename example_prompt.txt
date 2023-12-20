@@ -1,0 +1,13 @@
+You will be given a list of input-output pairs labeled "Case 0" "Case 1" and so on.
+Each input and output is a grid of numbers representing a visual grid. There is a SINGLE rule that transforms each input grid to the corresponding output grid.
+The pattern may involve counting or sorting objects (e.g. sorting by size) comparing numbers (e.g. which shape or symbol appears the most? Which is the largest object? Which objects are the same size?) or repeating a pattern for a fixed number of time.
+There are other concepts that may be relevant.
+
+Lines rectangular shapes
+Symmetries rotations translations.
+Shape upscaling or downscaling elastic distortions.
+-Containing being contained/being inside or outside of a perimeter.
+Drawing lines connecting points orthogonal projections.
+Copying repeating objects.
+You should treat cells with 0 as empty cells (backgrounds).
+Please generate the Output grid that corresponds to the last given Input grid using the transformation rule you induced from the previous input-output pairs.

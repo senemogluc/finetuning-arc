@@ -1,0 +1,12 @@
+Based on the given transformation rules and previous cases, it seems that the goal here is to find the smallest rectangular shape formed by the numbers 8. Here's the reasoning for each step:
+
+1. Identify all instances of the number 8 in the grid. In this case, there are three such occurrences: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], and [0, 8, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0].
+
+2. Find the smallest rectangle that contains all instances of the number 8. In this case, the smallest rectangle is formed by the three occurrences mentioned above, with the dimensions of 1x3. The coordinates of the top-left corner of this rectangle are (4, 6), and the bottom-right corner has coordinates (4, 8).
+
+3. Create an output grid that reflects this transformation. In this case, we can simply copy the values from the original input grid within the boundaries of the smallest rectangle:
+
+Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 8, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]

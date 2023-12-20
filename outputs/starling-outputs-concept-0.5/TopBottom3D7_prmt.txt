@@ -1,0 +1,42 @@
+Case 3:
+
+In this case, there are several 1x1 blocks of the same number (e.g., [0, 9, 0], [0, 0, 9], [5, 9, 5]) surrounded by other numbers. We can consider these as objects. The transformation rule indicates that objects with the same number adjacent to each other are part of the same object. Therefore, we can merge these objects based on their adjacency.
+
+Here's the reasoning for each step:
+
+1. Merge the [0, 9, 0] and [0, 0, 9] blocks in the first row since they are adjacent.
+2. Merge the [5, 5, 5] and [5, 9, 5] blocks in the third row since they are adjacent.
+3. Merge the [0, 9, 0] and [0, 0, 9] blocks in the seventh row since they are adjacent.
+4. Since all other objects in the input grid have the same number adjacent to them, we can merge those as well.
+
+After applying these transformations, the output grid will be:
+
+  [0, 9, 0, 0, 9, 0, 0, 9]
+  [0, 9, 0, 0, 9, 0, 0, 9]
+  [5, 5, 5, 5, 9, 5, 5, 9]
+  [0, 9, 0, 0, 9, 0, 0, 9]
+  [0, 9, 0, 0, 9, 0, 0, 9]
+  [5, 5, 5, 5, 5, 5, 5, 5]
+  [0, 9, 0, 0, 9, 0, 0, 9]
+  [0, 9, 0, 0, 9, 0, 0, 9]
+  [0, 9, 0, 0, 9, 0, 0, 9]
+  [0, 9, 0, 0, 9, 0, 0, 9]
+  [0, 9, 0, 0, 9, 0, 0, 9]
+  [5, 9, 5, 5, 9, 5, 5, 5]
+  [0, 9, 0, 0, 9, 0, 0, 9]
+
+So the output for the last input is:
+
+  [0, 9, 0, 0, 9, 0, 0, 9]
+  [0, 9, 0, 0, 9, 0, 0, 9]
+  [5, 5, 5, 5, 9, 5, 5, 9]
+  [0, 9, 0, 0, 9, 0, 0, 9]
+  [0, 9, 0, 0, 9, 0, 0, 9]
+  [5, 5, 5, 5, 5, 5, 5, 5]
+  [0, 9, 0, 0, 9, 0, 0, 9]
+  [0, 9, 0, 0, 9, 0, 0, 9]
+  [0, 9, 0, 0, 9, 0, 0, 9]
+  [0, 9, 0, 0, 9, 0, 0, 9]
+  [0, 9, 0, 0, 9, 0, 0, 9]
+  [5, 9, 5, 5, 9, 5, 5, 5]
+  [0, 9, 0, 0, 9, 0, 0, 9]

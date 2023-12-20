@@ -1,0 +1,24 @@
+Here's the reasoning for each step:
+
+1. Identify adjacent elements with the same value and count them as a single object until they are separated by another number or the edge of the grid. 
+   - For example, in the first row, we have two occurrences of 0 next to each other, so we count them as a single 0.
+2. Count the number of objects and their sizes (number of cells) in each object. 
+   - In our first case, there are 3 objects: one with size 8, one with size 2, and one with size 2.
+3. Create a new grid with the same dimensions as the input grid, and place the objects back into it while maintaining their relative positions from the original grid. 
+   - For example, in our first case, we would place an 8x1 rectangle at position (0, 0), a 2x1 rectangle at position (2, 0), and another 2x1 rectangle at position (4, 0).
+4. If there are any cells left in the output grid after placing all objects, fill them with the value of the last object's size. In our first case, we would place a 2x1 rectangle at position (6, 0).
+5. Repeat steps 1-4 for each input grid.
+
+Here is the output grid for the last input:
+
+  [0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]

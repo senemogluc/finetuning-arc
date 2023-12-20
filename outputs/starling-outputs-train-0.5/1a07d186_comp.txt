@@ -1,0 +1,82 @@
+Here's the reasoning for each step:
+
+1. Identify objects that are adjacent to each other and have the same value (3) as well as their count. For example, in the first row, we can see a group of 8 '2's adjacent to each other, so we treat them as a single object with a count of 8.
+
+2. Count the number of objects in the grid and their counts. In this case, there are 10 objects in total: 8 '2's, 1 '3', and 1 '4'.
+
+3. For each object, find its centroid (average position) and place it at that location in the output grid.
+
+Here's the reasoning for each step:
+
+1. Identify objects that are adjacent to each other and have the same value (3) as well as their count. For example, in the first row, we can see a group of 8 '2's adjacent to each other, so we treat them as a single object with a count of 8.
+
+2. Count the number of objects in the grid and their counts. In this case, there are 10 objects in total: 8 '2's, 1 '3', and 1 '4'.
+
+3. For each object, find its centroid (average position) and place it at that location in the output grid.
+
+Here's a step-by-step breakdown of how to perform these steps:
+
+1. Create an empty list called `objects` to store the objects found in the input grid.
+2. Iterate through the rows of the input grid, and for each row, iterate through its columns. For each cell, check if it has a value other than 0 or a boundary. If so, add the cell to an object if one already exists with that value, or create a new object if none exist. Keep track of the count of cells in the current object and the total number of objects.
+3. Once all rows have been processed, iterate through the `objects` list in the order they were created. For each object, calculate its centroid by finding the average (x, y) position of its cells. Set the corresponding cell in the output grid to the value of the object and increment the count of objects.
+4. The resulting output grid is the desired result for this case.
+
+Here's a Python function that implements these steps:
+
+```python
+def transform_grid(input_grid):
+    objects = []
+    object_count = 0
+    for row in input_grid:
+        for col, val in enumerate(row):
+            if val != 0 and (row[col-1] == 0 or row[col+1] == 0):
+                if not objects:
+                    object = [(col, val)]
+                    objects.append(object)
+                    object_count += 1
+                else:
+                    for obj in objects:
+                        if obj[1] == val:
+                            obj.append((col, val))
+                            break
+                    else:
+                        object = [(col, val)]
+                        objects.append(object)
+                        object_count += 1
+    output_grid = [[0 for _ in range(len(input_grid[0]))] for _ in range(len(input_grid))]
+    for obj in objects:
+        centroid_x, centroid_y = sum(cell[0] for cell in obj) / len(obj), sum(cell[1] for cell in obj) / len(obj)
+        output_grid[int(centroid_y)][int(centroid_x)] = obj[1]
+    return output_grid
+```
+
+Here's a Python script that applies the transformation rule to each of the provided input-output pairs:
+
+```python
+case_0 = [[0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0],
+          [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+          [0, 0, 0, 0, 0, 0, 0, 0, 0,

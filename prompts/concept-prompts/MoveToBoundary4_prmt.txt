@@ -1,0 +1,89 @@
+You are given a series of inputs and output pairs. 
+These are all in the form of a 2D array, representing a 2D grid, with values from 0-9. 
+The values are not representative of any ordinal ranking. You can think of them as different colors. You can consider 0 as the background.
+
+Use the following priors to infer the transformation rule:
+
+> Same numbers that are adjacent to each other are part of the same object
+> Objects are assumed to persist despite the presence of noise or occlusion by other objects. In many cases objects from the input persiston the output grid, often in a transformed form.
+> Recognize tasks involving physical contact between objects. This may include translation, rebounding, or other interactions between elements.
+> Be attentive to tasks involving counting or sorting objects. Compare numbers, sizes, and shapes of objects.
+
+- View each task as a problem that may involve one or more of the mentioned priors.
+- Pay attention to object relationships, transformations, and persistence.
+- Implicitly identify goals or intentions guiding the transformations.
+- Apply counting and basic arithmetic for tasks involving numerical aspects.
+- Recognize and leverage elementary geometry and topology concepts as outlined.
+- Write down your reasoning for each option and then pick one.
+- Check whether your transformation also works on the previous input output pairs.
+- Output grid can be smaller or larger than the input grid.
+
+
+Please generate the Output grid that corresponds to the last given Input grid using the transformation rule you induced from the previous input-output pairs.
+
+Case 0:
+Input:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 6, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 6, 0, 0]
+  [0, 0, 6, 0, 0, 0, 0, 6, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 6, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 6, 6, 6, 0, 0, 0, 6, 0]
+  [0, 0, 0, 0, 0, 0, 6, 0, 6, 0]
+
+Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 6, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 6, 0, 0, 0, 0, 0, 0, 0, 0]
+  [6, 6, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 6, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [6, 6, 6, 6, 0, 0, 0, 0, 0, 0]
+  [6, 0, 0, 6, 0, 0, 0, 0, 0, 0]
+
+Case 1:
+Input:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 6, 0, 6, 6, 6, 0, 0]
+  [0, 0, 0, 6, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 6, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [6, 6, 6, 6, 0, 0, 0, 0, 0, 0]
+  [6, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [6, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Case 2
+Input:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 6, 0, 0, 0]
+  [0, 6, 0, 6, 0, 0, 6, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 6, 0, 0, 0]
+  [0, 0, 6, 0, 0, 0, 6, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Output:
+
+What is the output of the last input?

@@ -1,0 +1,25 @@
+Case 3:
+
+Input:
+  [0, 0, 0, 0, 0, 0]
+  [0, 0, 2, 2, 0, 0]
+  [0, 0, 0, 0, 0, 0]
+  [0, 0, 5, 5, 0, 0]
+  [0, 0, 5, 5, 0, 0]
+  [0, 0, 0, 0, 0, 0]
+
+To find the output grid, we can follow these steps:
+
+1. Identify objects and their relationships: There are two main objects in the input grid - one with value 2 (occurring twice) and another with value 5 (occurring twice). They are not adjacent to each other.
+2. Apply counting and basic arithmetic: Since both objects occur twice, we can expect them to appear again in the output grid.
+3. Recognize and leverage elementary geometry and topology concepts: The objects maintain their shape and size throughout the transformation.
+4. Write down reasoning for each option: As the objects are not adjacent and have distinct values, they should remain separated after the transformation. Therefore, we can expect the output grid to have one 2-object and another 5-object, both appearing twice.
+5. Check whether the transformation also works on previous input-output pairs: The transformation rule holds true for all previous cases as well.
+
+Output:
+  [0, 0, 0, 0, 0, 0]
+  [0, 2, 2, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0]
+  [0, 5, 5, 0, 0, 0]
+  [0, 5, 5, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0]
