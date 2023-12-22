@@ -1,0 +1,40 @@
+Case 3:
+
+To find the transformation rule for this case, we can analyze the given input and output pairs. In each case, the same numbers that are adjacent to each other are part of the same object. Objects persist despite the presence of noise or occlusion by other objects, and recognize tasks involving physical contact between objects.
+
+For the last input, we have a 2D grid with values from 0-9. The same numbers that are adjacent to each other are part of the same object. We can see that there are several objects in this grid:
+
+1. A horizontal strip of 1s at the top (rows 0 and 1) with a length of 5.
+2. A vertical strip of 2s in the center column (columns 3 to 7) with a length of 5.
+3. A horizontal strip of 2s at the bottom (rows 8 and 9) with a length of 5.
+4. A background object with value 0, occupying all the remaining cells.
+
+Now let's apply the transformation rule to find the output grid:
+
+1. For the horizontal strip of 1s, we can move it down by one row to create space for the vertical strip of 2s. The new position of the 1s strip will be (1, 0) to (5, 1).
+
+   Output:
+   
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+   [0, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+   [0, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+   [0, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+   [0, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+   [0, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 2, 2, 2, 2, 2, 2, 2, 2, 0]
+   [0, 2, 2, 2, 2, 2, 2, 2, 2, 0]
+
+The final output grid for the last input is:
+
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+  [0, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+  [0, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+  [0, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+  [0, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+  [0, 1, 1, 1, 1, 1, 1, 1, 1, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 2, 2, 2, 2, 2, 2, 2, 2, 0]
+  [0, 2, 2, 2, 2, 2, 2, 2, 2, 0]

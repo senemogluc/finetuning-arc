@@ -1,0 +1,43 @@
+Here's the reasoning behind each step and the final output:
+
+1. Identify objects based on adjacent numbers (8) and background (0). In this case, there are two main objects: a horizontal row of 8s and a vertical column of 8s.
+2. The horizontal row of 8s has a length of 9 units (including the first and last 8s). The vertical column of 8s has a length of 3 units (including the first and last 8s).
+3. Recognize that there are two separate transformations happening:
+   a. The horizontal row of 8s is sliding downwards by one unit, while the vertical column remains stationary. This transformation occurs in steps 2-5.
+   b. The vertical column of 8s moves to the right by one unit, while the horizontal row remains stationary. This transformation occurs in steps 6-9.
+4. Apply the transformations and update the output grid accordingly:
+
+Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 8, 0, 8, 0, 8, 0, 8, 0]
+  [8, 8, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 8, 8, 8, 0, 0, 0, 0, 0]
+  [8, 8, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 8, 8, 8, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+The output grid for the last input is:
+
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 8, 0, 8, 0, 8, 0, 8, 0]
+  [8, 8, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 8, 8, 8, 0, 0, 0, 0, 0]
+  [8, 8, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 8, 8, 8, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]

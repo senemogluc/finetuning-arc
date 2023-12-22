@@ -1,0 +1,6 @@
+Case 3 Output:
+
+[5, 5, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0]
+[0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0]
+
+In this case, the transformation rule is not entirely clear. The input grid appears to be a sequence of alternating rows with the same pattern: a row of 5s followed by a row of 0s, and so on. It's difficult to determine a consistent transformation rule based solely on the provided input sequences.

@@ -1,0 +1,21 @@
+Here are some observations about the transformations that have occurred in the input grid:
+1. Transformations between objects:
+   a. Moving: A given object can move to another location on the grid, such as a piece moving from one cell to another cell.
+   b. Rotating: A given object can rotate by 90 degrees (clockwise) in each step.
+   c. Resizing: A given object can resize itself, changing its size while maintaining shape and position on the grid.
+   d. Reshuffling: A given object can shuffle in a random manner, but still maintain its shape and position on the grid.
+2. Transformations between objects:
+   e. Merging: Two or more objects combine to form another single object (e.g. merging two circles into one).
+   f. Splitting: One object can be divided into several smaller objects.
+3. Transformation of the grid:
+   g. Swapping: Two or more cells are swapped in the grid, changing their relative positions.
+   h. Scaling: A given object can change its size while maintaining shape and position on the grid.
+4. Transformations between numbers:
+   i. Addition: Numbers are added to form another single number.
+   j. Subtraction: Numbers are subtracted to form a single number.
+5. Transformation of the grid:
+   k. Rotation: A given cell is rotated by 90 degrees (clockwise) in each step.
+6. Transformation of numbers:
+   l. Addition: Numbers are added to form another single number.
+7. Transformation of numbers:
+   m. Subtraction: Numbers are subtracted to form a single number.

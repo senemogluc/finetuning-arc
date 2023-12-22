@@ -1,0 +1,40 @@
+Here's a step-by-step reasoning for each case:
+
+Case 0:
+The input grid has two main objects with numbers 9 and 7. The transformation rule is to replace the entire object with its average value. So, we can calculate the average of 9 and 7, which is 8. Then, we replace all instances of 9 and 7 in the grid with 8.
+
+Case 1:
+The input grid has two main objects with numbers 4 and 2. The transformation rule is to replace the entire object with its average value. So, we can calculate the average of 4 and 2, which is 3. Then, we replace all instances of 4 and 2 in the grid with 3. Additionally, we notice that there are no objects with number 6, so we don't need to make any changes for them.
+
+Case 2:
+The input grid has two main objects with numbers 3 and 5. The transformation rule is to replace the entire object with its average value. So, we can calculate the average of 3 and 5, which is 4. Then, we replace all instances of 3 and 5 in the grid with 4. Additionally, we notice that there are no objects with number 6, so we don't need to make any changes for them.
+
+Case 3:
+The input grid has two main objects with numbers 3 and 2. The transformation rule is to replace the entire object with its average value. So, we can calculate the average of 3 and 2, which is 2.5. Then, we replace all instances of 3 and 2 in the grid with 2.5. Additionally, we notice that there are no objects with number 6 or 7, so we don't need to make any changes for them.
+
+For the last input:
+
+Input:
+  [0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0]
+  [0, 0, 3, 6, 0, 0]
+  [0, 0, 5, 2, 0, 0]
+  [0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0]
+
+Output:
+  [2.5, 0, 0, 3.5, 2.5, 0]
+  [2.5, 0, 0, 3.5, 2.5, 0]
+  [0, 0, 3, 6, 0, 0]
+  [0, 0, 5, 2, 0, 0]
+  [0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0]
+
+So, the output for the last input is:
+
+  [2.5, 0, 0, 3.5, 2.5, 0]
+  [2.5, 0, 0, 3.5, 2.5, 0]
+  [0, 0, 3, 6, 0, 0]
+  [0, 0, 5, 2, 0, 0]
+  [0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0]

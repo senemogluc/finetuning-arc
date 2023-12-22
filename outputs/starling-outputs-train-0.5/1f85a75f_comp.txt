@@ -1,0 +1,12 @@
+Here are some transformations that can be observed in the input grid:
+
+1. Merge adjacent objects with the same color.
+2. Persist objects through contact or physical collision with other objects. This persistence should not be affected by the object's size, shape, or positioning on the grid.
+3. Treatment of 0 as a special object that can merge with any object. The 0 is treated as if it were an object of the same color and type as the nearest object in its immediate neighborhood (up to 8 adjacent objects).
+4. Counting the number of objects merged, which helps determine persistence.
+5. Elementary geometric concepts like linearity, topology, and adjacency are used for determining merges and transformations.
+6. Basic arithmetic is used to reason about the output grid size and shape.
+7. Consideration of numerical aspects and counting of objects merged in each step, helping to determine persistence and object relationships.
+8. The use of colors as a property of objects, which can be merged together with other objects.
+9. Objects are treated as having certain properties such as color, shape, size, and position on the grid.
+10. Treatment of 3 as a special number that is treated as if it were an object of the same color and type as the nearest object in its immediate neighborhood (up to 8 adjacent objects).

@@ -1,0 +1,7 @@
+Based on the provided transformations and reasoning, here's the output for the last input grid:
+
+[0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[2, 2, 2, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0]
+[0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+This output grid is smaller than the input grid and follows the transformation rules.

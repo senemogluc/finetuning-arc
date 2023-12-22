@@ -1,0 +1,27 @@
+Here are the steps to find the output for the given input:
+
+1. Identify adjacent same numbers and treat them as a single object.
+2. Count the number of occurrences of each number in a row or column.
+3. If the count is odd, replicate the number across all occurrences. Otherwise, concatenate the numbers with a 0 between them.
+4. If there are any remaining single numbers, place them at the end of the output grid.
+
+Following these steps for the last input:
+
+1. Identify adjacent same numbers and treat them as a single object.
+   - [0, 3, 0, 3, 0, 0, 0, 3]
+   - [0, 3, 3, 0, 0, 0, 3, 0]
+   - [0, 3, 0, 0, 0, 3, 3, 0]
+   - [0, 0, 0, 0, 0, 0, 0, 0]
+
+2. Count the number of occurrences of each number in a row or column.
+   - Occurrence count: {0: 8, 3: 6}
+
+3. If the count is odd, replicate the number across all occurrences. Otherwise, concatenate the numbers with a 0 between them.
+   - [0, 0, 0, 0, 0, 0, 0, 0]
+   - [0, 3, 3, 3, 0, 3, 3, 0]
+
+4. If there are any remaining single numbers, place them at the end of the output grid. In this case, there are no remaining single numbers.
+
+Output:
+  [0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 3, 3, 3, 0, 3, 3, 0]

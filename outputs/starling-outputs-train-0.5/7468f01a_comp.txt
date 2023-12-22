@@ -1,0 +1,21 @@
+In this case, we can observe that there are three main objects in the input grid:
+
+1. A horizontal row of 8s with a single 1 adjacent to it (top left).
+2. A vertical column of 1s with an 8 adjacent to each (middle).
+3. A horizontal row of 8s with a single 1 adjacent to it (bottom right).
+
+We can apply the following transformation rule to obtain the output grid:
+
+1. Combine the horizontal row of 8s and the single 1 in the top left object into a single object, preserving their relative positions.
+2. Merge all the vertical columns of 1s with an 8 adjacent to each into a single object, preserving their relative positions. The 8s will form a rectangle around the 1s.
+3. Combine the horizontal row of 8s and the single 1 in the bottom right object into a single object, preserving their relative positions.
+4. Remove any empty spaces between the objects.
+
+Following these steps, we get the following output grid:
+
+  [8, 8, 8, 8]
+  [8, 1, 8, 8]
+  [8, 1, 8, 8]
+  [8, 8, 8, 8]
+
+This is the output grid for the last input.

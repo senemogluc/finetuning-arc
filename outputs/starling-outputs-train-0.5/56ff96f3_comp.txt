@@ -1,0 +1,26 @@
+Case 4:
+Input:
+  [8, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 8, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 6, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 6, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0]
+
+Output:
+  [8, 0, 0, 0, 0, 0, 0, 0]
+  [8, 8, 8, 0, 0, 0, 0, 0]
+  [8, 8, 8, 0, 0, 0, 0, 0]
+  [8, 8, 8, 0, 0, 0, 0, 0]
+  [8, 8, 8, 0, 6, 6, 6, 6]
+  [8, 8, 8, 0, 6, 6, 6, 6]
+  [8, 8, 8, 0, 6, 6, 6, 6]
+  [8, 8, 8, 0, 6, 6, 6, 6]
+  [0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0]
+
+In this case, the transformation rule involves merging adjacent objects with the same value and increasing their count. The final output grid has a larger size than the input grid, as the merged objects have higher counts.

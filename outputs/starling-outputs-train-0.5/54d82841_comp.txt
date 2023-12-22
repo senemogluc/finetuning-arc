@@ -1,0 +1,33 @@
+Case 3:
+
+Input:
+  [0, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0]
+  [0, 5, 0, 5, 0, 8, 8, 8, 0, 0, 0]
+  [0, 0, 0, 0, 0, 8, 0, 8, 3, 3, 3]
+  [0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 3]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+To find the transformation rule for this case, we can observe that the input grid consists of a few connected components with different colors (numbers). These components are not interacting with each other, and there's no need to apply counting or sorting tasks. The main goal here is to maintain the integrity of these components in the output grid.
+
+Based on this observation, we can create an output grid that preserves the connected components from the input grid:
+
+Output:
+  [0, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0]
+  [0, 5, 0, 5, 0, 8, 8, 8, 0, 0, 0]
+  [0, 0, 0, 0, 0, 8, 0, 8, 3, 3, 3]
+  [0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 3]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+The output grid for the last input in Case 3 is:
+
+  [0, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0]
+  [0, 5, 0, 5, 0, 8, 8, 8, 0, 0, 0]
+  [0, 0, 0, 0, 0, 8, 0, 8, 3, 3, 3]
+  [0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 3]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]

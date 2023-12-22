@@ -1,0 +1,45 @@
+To determine the transformation rule for each case, we need to analyze the given input and output pairs. Here's a summary of the transformations in each case:
+
+Case 0:
+- Transformation: Rotation of objects by 90 degrees clockwise or counterclockwise.
+- The output grid has the same number of rows and columns as the input grid but rotated.
+
+Case 1:
+- Transformation: Rotation of objects by 180 degrees.
+- The output grid has the same number of rows and columns as the input grid, but all the values are flipped horizontally (left to right).
+
+Case 2:
+- Transformation: Rotation of objects by 90 degrees counterclockwise or clockwise.
+- The output grid has the same number of rows and columns as the input grid but rotated.
+
+Case 3:
+- Transformation: Rotation of objects by 180 degrees.
+- The output grid has the same number of rows and columns as the input grid, but all the values are flipped horizontally (left to right).
+
+Now let's apply these transformation rules to the last given input grid (Case 3):
+
+Input:
+  [0, 0, 0, 0, 0, 0, 3, 0, 0, 9]
+  [7, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 3, 0, 0, 9, 0, 0, 0]
+  [6, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 6, 0, 0, 7, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 4, 0, 0, 0, 0]
+
+Output:
+  [0, 0, 0, 0, 0, 0, 9, 0, 0, 3]
+  [7, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 9, 0, 0, 3, 0, 0, 0]
+  [6, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 6, 0, 0, 7, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 4, 0, 0, 0, 0]
+
+In this case, the output grid has the same number of rows and columns as the input grid but rotated by 180 degrees.

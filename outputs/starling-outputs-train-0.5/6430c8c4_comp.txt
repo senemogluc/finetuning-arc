@@ -1,0 +1,23 @@
+Here are the transformations for each case:
+
+Case 0:
+- The grid consists of two large squares with 7's and a small square with 4's. The transformation reduces the size of the large squares by one and fills in the background.
+
+Case 1:
+- The grid has two large squares with 7's, and four smaller squares with 4's. The transformation creates a larger square with 3's in the center by merging the two large squares and placing the 4's around it.
+
+Case 2:
+- The grid has two large squares with 7's and four small squares with 2's. The transformation forms a single large square with 3's by joining the two large squares and placing the 2's on the sides.
+
+Case 3:
+- The grid consists of two large squares with 7's and four small squares with 4's. The transformation creates a large square with 3's in the center by merging the two large squares and placing the 4's around it.
+
+Case 4:
+- The grid has a single large square with 7's surrounding a smaller square with 2's. The transformation forms a diamond shape with 3's by moving the 7's inward and placing the 2's at the tips of the diamond.
+
+For the last input (Case 4), the output grid is:
+
+  [0, 0, 3, 0]
+  [3, 0, 0, 0]
+  [0, 0, 0, 0]
+  [0, 0, 0, 0]

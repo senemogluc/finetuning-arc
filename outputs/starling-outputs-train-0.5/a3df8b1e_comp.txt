@@ -1,0 +1,32 @@
+Case 3:
+
+Input:
+  [0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0]
+  [1, 0, 0, 0, 0]
+
+To generate the output grid for this input, we can follow these steps:
+
+1. Identify objects in the input grid based on adjacent same numbers. In this case, there is only one object with the number 1 at the bottom-right corner.
+2. Transform the object by moving it to the top-left corner of the output grid while preserving its shape and size. This will result in a new grid where the object occupies the same position as in the input grid, but with a different orientation.
+3. Since there are no other objects or interactions between elements in the input grid, we can simply copy the remaining background (0) values from the input grid to the output grid.
+
+Following these steps, the output grid for this input would be:
+
+  [1, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0]
