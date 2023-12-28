@@ -1,47 +1,46 @@
 import json
 import os
-from pathlib import Path
-
-DATA_DIR = Path(__file__).parent / "data/training"
-PROMPTS_DIR = DATA_DIR / "train-prompts"
-OUTPUTS_DIR = DATA_DIR / "train-outputs"
-
 
 def task_to_prompt(task_json):
-    with open(DATA_DIR / task_json) as user_file:
-        parsed_json = json.load(user_file)
+    with open(task_json, mode='r') as f:
+        parsed_json = json.load(f)
 
     inputs = []
     outputs = []
 
     for case in parsed_json['train']:
-        inputs.append("\n".join([f"  {str(row)}" for row in case['input']]))
-        outputs.append("\n".join([f"  {str(row)}" for row in case['output']]))
+        inputs.append("[" + ", ".join([f"{str(row)}" for row in case['input']]) + "]")
+        outputs.append("[" + ", ".join([f"{str(row)}" for row in case['output']]) + "]")
 
-    test_input = "\n".join([f"  {str(row)}" for row in parsed_json['test'][0]['input']])
-    test_output = "\n".join([f"  {str(row)}" for row in parsed_json['test'][0]['output']])
+    test_input = "[" + ", ".join([f"{str(row)}" for row in parsed_json['test'][0]['input']]) + "]"
+    test_output = "[" + ", ".join([f"{str(row)}" for row in parsed_json['test'][0]['output']]) + "]"
 
-    with open('prompt-template.txt', mode='r') as f:
-        template = f.read()
+    prompt = ""
 
-    name, ext = os.path.splitext(task_json)
+    for i in range(len(inputs)):
+        prompt += "Case " + str(i) + ":\nInput:\n" + inputs[i]
+        prompt += "\n\nOutput:\n" + outputs[i] + "\n\n"
+    
+    prompt += "Test Case:\nInput:\n" + test_input
+    prompt += "\n\nOutput:"
 
-    with open(PROMPTS_DIR / f"{name}_prmt.txt", mode='w+') as f:
-        f.write(template)
-        for i in range(len(inputs)):
-            f.write("Case " + str(i) + ":\nInput:\n" + inputs[i])
-            f.write("\n\nOutput:\n" + outputs[i] + "\n\n")
-        
-        f.write("Case " + str(i+1) + "\nInput:\n" + test_input)
-        f.write("\n\nOutput:\n")
-        f.write("\nWhat is the output of the last input?")
-
-    with open(OUTPUTS_DIR / f"{name}_out.txt", mode='w+') as f:
-        f.write(test_output)
+    return prompt, test_output
 
 
-for task in os.listdir(DATA_DIR):
-    if task.endswith(".json"):
-        task_to_prompt(task)
 
-        #fillednotfilledminimal, topbottom2d2, extractobjectsminimal, movetoboundaryminimal, order10 - samedifferent10-
+def multiple_tasks_to_prompt(tasks_dir, out_json_dir):
+    json_dict = {}
+    for task in os.listdir(tasks_dir):
+        prompt, test_output = task_to_prompt(os.path.join(tasks_dir, task))
+        json_dict[task] = {"prompt": prompt, "test_output": test_output}
+    
+    with open(out_json_dir, mode='w') as f:
+        if not os.path.exists(os.path.dirname(out_json_dir)):
+            os.mkdir(os.path.dirname(out_json_dir))
+
+        json.dump(json_dict, f)
+            
+
+if __name__ == "__main__":
+    # print(task_to_prompt("data/training/0a938d79.json")[0])
+    multiple_tasks_to_prompt("data/aug/train", "fine_tune_data/arc_aug_train.json")
