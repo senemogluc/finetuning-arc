@@ -29,10 +29,10 @@ def task_to_prompt(task_json):
 
 
 def multiple_tasks_to_prompt(tasks_dir, out_json_dir):
-    json_dict = {}
+    json_dict = []
     for task in os.listdir(tasks_dir):
         prompt, test_output = task_to_prompt(os.path.join(tasks_dir, task))
-        json_dict[task] = {"prompt": prompt, "test_output": test_output}
+        json_dict.append({"prompt": prompt, "test_output": test_output})
     
     with open(out_json_dir, mode='w') as f:
         if not os.path.exists(os.path.dirname(out_json_dir)):
@@ -43,4 +43,4 @@ def multiple_tasks_to_prompt(tasks_dir, out_json_dir):
 
 if __name__ == "__main__":
     # print(task_to_prompt("data/training/0a938d79.json")[0])
-    multiple_tasks_to_prompt("data/aug/train", "fine_tune_data/arc_aug_train.json")
+    multiple_tasks_to_prompt("data/evaluation", "fine_tune_data/arc_aug_eval.json")

@@ -1,2 +1,5 @@
 .venv
 *.gguf
+results/finetuned-models/Starling-LM-7B-alpha-finetuned/checkpoint-*
+code-shell.sh
+__pycache__/

@@ -12,6 +12,15 @@ llm = Llama(
   verbose=False,
 )
 
+llm2 = Llama(
+  model_path="starling-lm-7b-alpha.Q6_K.gguf",
+  n_ctx=32768,  
+  n_threads_batch=2,
+  n_gpu_layers=-1,
+  n_batch=1024,
+  verbose=False,
+)
+
 PROMPT_PATH = "prompts/train-prompts/"
 
 # with open('prompts/concept-prompts/TopBottom2D2_prmt.txt') as f:
@@ -48,7 +57,7 @@ for prompt in os.listdir('data/training/train-prompts'):
     print(output["choices"][0]['text'].strip())
 """
 
-
+"""
 for prompt in os.listdir(PROMPT_PATH):
     if os.path.exists('outputs/starling-outputs-train-0.5/' + prompt.replace('prmt', 'comp')):
         print(prompt, "already exists")
@@ -72,6 +81,8 @@ for prompt in os.listdir(PROMPT_PATH):
         f.write(output["choices"][0]['text'].strip())
      
     print(prompt + " done")
+"""
+
 
 
 # Chat Completion API
