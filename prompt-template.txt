@@ -12,4 +12,4 @@ Colored tiles that occupy the grid square positions corresponding to their locat
 * Check whether your transformation also works on the previous input output pairs. If not, try to find a more general transformation that works on all input output pairs.
 
 
-Please generate the Output grid that corresponds to the last given Input grid using the transformation rule you induced from the previous input-output pairs.
+Please generate the Output grid that corresponds to the last given Input grid using the transformation rule you induced from the previous input-output pairs. Don't create more than one grid.
