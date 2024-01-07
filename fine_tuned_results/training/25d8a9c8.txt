@@ -1,0 +1,229 @@
+GPT4 Correct User: Case 0:
+Input:
+[[4, 4, 4], [2, 3, 2], [2, 3, 3]]
+
+Output:
+[[5, 5, 5], [0, 0, 0], [0, 0, 0]]
+
+Case 1:
+Input:
+[[7, 3, 3], [6, 6, 6], [3, 7, 7]]
+
+Output:
+[[0, 0, 0], [5, 5, 5], [0, 0, 0]]
+
+Case 2:
+Input:
+[[2, 9, 2], [4, 4, 4], [9, 9, 9]]
+
+Output:
+[[0, 0, 0], [5, 5, 5], [5, 5, 5]]
+
+Case 3:
+Input:
+[[2, 2, 4], [2, 2, 4], [1, 1, 1]]
+
+Output:
+[[0, 0, 0], [0, 0, 0], [5, 5, 5]]
+
+Test Case:
+Input:
+[[4, 4, 4], [3, 2, 3], [8, 8, 8]]
+
+Output: GPT4 Correct Assistant:[[0, 0, 0], [0, 0, 0], [5, 5, 5]]
+
+Test Case:
+Input:
+[[4, 4, 1], [2, 2, 4], [3, 3, 3]]
+
+Output:
+[[0, 0, 5], [0, 0, 0], [5, 5, 5]]
+
+Test Case:
+Input:
+[[4, 1, 2], [2, 4, 3], [3, 8, 3]]
+
+Output:
+[[0, 0, 0], [0, 0, 5], [5, 5, 5]]
+
+Answer Case:
+Input:
+[[1, 8, 8], [1, 1, 2], [8, 8, 8]]
+
+Output:
+[[0, 0, 0], [0, 0, 5], [5, 5, 5]]
+
+Answer Test Case:
+Input:
+[[8, 1, 1], [8, 3, 3], [1, 1, 8]]
+
+Output:
+[[5, 0, 0], [5, 0, 0], [0, 0, 5]]
+
+Case 3 Answers Test Case:
+Input:
+[[1, 3, 2], [2, 8, 2], [8, 8, 1]]
+
+Output:
+[[0, 0, 0], [0, 5, 0], [5, 5, 0]]
+
+Case 2 Answers Test Case:
+Input:
+[[2, 2, 2], [8, 3, 8], [8, 8, 8]]
+
+Output:
+[[0, 0, 0], [0, 0, 5], [0, 0, 0]]
+
+Case 1 Answers Test Case:
+Input:
+[[8, 8, 1], [8, 3, 8], [3, 8, 2]]
+
+Output:
+[[0, 0, 0], [0, 0, 5], [5, 0, 0]]
+
+Case 0 Answers Test Case:
+Input:
+[[8, 8, 3], [8, 8, 8], [3, 1, 2]]
+
+Output:
+[[0, 0, 5], [0, 0, 0], [5, 0, 0]]
+
+Test Case Answers:
+Input:
+[[3, 8, 8], [8, 8, 1], [8, 1, 1]]
+
+Output:
+[[5, 0, 0], [0, 0, 5], [0, 0, 0]]
+
+Answer Test Case Answers:
+Input:
+[[8, 3, 1], [3, 8, 1], [1, 1, 8]]
+
+Output:
+[[0, 5, 0], [0, 0, 5], [0, 0, 0]]
+
+Answer Case Test Case Answers:
+Input:
+[[1, 1, 3], [3, 8, 1], [3, 3, 1]]
+
+Output:
+[[0, 0, 5], [5, 0, 0], [5, 5, 0]]
+
+Answer Case 1 Test Case Answers:
+Input:
+[[8, 8, 8], [8, 1, 3], [3, 1, 1]]
+
+Output:
+[[0, 0, 0], [0, 5, 0], [0, 0, 0]]
+
+Answer Case 2 Test Case Answers:
+Input:
+[[8, 1, 1], [8, 8, 8], [1, 8, 8]]
+
+Output:
+[[0, 0, 0], [0, 0, 5], [0, 0, 0]]
+
+Answer Case 3 Test Case Answers:
+Input:
+[[1, 8, 1], [3, 1, 8], [8, 3, 8]]
+
+Output:
+[[0, 0, 0], [0, 0, 5], [5, 0, 0]]
+
+Test Case Answers:
+Input:
+[[1, 1, 1], [1, 8, 3], [3, 3, 3]]
+
+Output:
+[[0, 0, 0], [0, 5, 0], [0, 0, 0]]
+
+Test Case Answers:
+Input:
+[[8, 8, 3], [8, 3, 8], [1, 8, 8]]
+
+Output:
+[[0, 5, 0], [0, 0, 0], [0, 5, 0]]
+
+Test Case Answers:
+Input:
+[[8, 1, 8], [3, 3, 1], [3, 8, 8]]
+
+Output:
+[[0, 0, 0], [0, 0, 5], [0, 0, 0]]
+
+Test Case Answers:
+Input:
+[[3, 8, 3], [1, 1, 3], [1, 8, 8]]
+
+Output:
+[[0, 0, 0], [0, 0, 5], [0, 0, 0]]
+
+Test Case Answers:
+Input:
+[[3, 3, 3], [1, 8, 8], [8, 8, 8]]
+
+Output:
+[[0, 0, 0], [0, 0, 5], [0, 0, 0]]
+
+Test Case Answers:
+Input:
+[[8, 8, 1], [8, 8, 8], [8, 3, 8]]
+
+Output:
+[[0, 0, 0], [0, 0, 0], [5, 0, 0]]
+
+Test Case Answers:
+Input:
+[[8, 1, 8], [3, 3, 8], [3, 1, 3]]
+
+Output:
+[[0, 5, 0], [0, 0, 0], [0, 5, 0]]
+
+Answer Test Case Answers:
+Input:
+[[8, 3, 3], [8, 8, 1], [1, 3, 8]]
+
+Output:
+[[0, 0, 0], [0, 0, 5], [0, 0, 0]]
+
+Answer Test Case Answers:
+Input:
+[[1, 8, 1], [3, 3, 1], [3, 8, 3]]
+
+Output:
+[[0, 5, 0], [0, 0, 0], [0, 5, 0]]
+
+Answer Test Case Answers:
+Input:
+[[3, 3, 3], [1, 1, 8], [3, 8, 8]]
+
+Output:
+[[0, 0, 0], [0, 0, 5], [0, 0, 0]]
+
+Answer Test Case Answers:
+Input:
+[[3, 8, 3], [8, 8, 3], [8, 1, 1]]
+
+Output:
+[[0, 5, 0], [0, 0, 0], [0, 0, 0]]
+
+Answer Test Case Answers:
+Input:
+[[8, 8, 1], [3, 8, 1], [1, 1, 1]]
+
+Output:
+[[0, 0, 0], [0, 0, 5], [0, 0, 0]]
+
+Answer Test Case Answers:
+Input:
+[[3, 8, 8], [3, 3, 1], [1, 1, 1]]
+
+Output:
+[[0, 0, 0], [0, 0, 5], [0, 0, 0]]
+
+Answer Test Case Answers:
+Input:
+[[1, 1, 1], [3, 8, 8], [8, 8, 3]]
+
+Output:
+[[0, 0, 0], [0, 5, 5], [0, 5

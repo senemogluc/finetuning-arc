@@ -1,0 +1,35 @@
+GPT4 Correct User: Case 0:
+Input:
+[[0, 2, 0, 0, 2], [2, 2, 0, 2, 2], [0, 0, 0, 0, 0], [0, 2, 0, 2, 2], [2, 2, 0, 2, 0]]
+
+Output:
+[[2, 2], [2, 0]]
+
+Case 1:
+Input:
+[[1, 0, 0, 1, 0], [0, 1, 0, 0, 1], [0, 0, 0, 0, 0], [1, 0, 0, 1, 0], [1, 1, 0, 0, 1]]
+
+Output:
+[[1, 0], [1, 1]]
+
+Case 2:
+Input:
+[[8, 8, 0, 0, 8], [8, 0, 0, 8, 0], [0, 0, 0, 0, 0], [8, 8, 0, 8, 8], [8, 0, 0, 8, 0]]
+
+Output:
+[[0, 8], [8, 0]]
+
+Test Case:
+Input:
+[[5, 5, 0, 5, 0], [0, 5, 0, 0, 5], [0, 0, 0, 0, 0], [5, 5, 0, 5, 5], [0, 5, 0, 0, 5]]
+
+Output: GPT4 Correct Assistant:[[5, 0], [0, 5]]
+
+Explanation:
+In each case, we are given a 5x5 matrix with 0s and the number. Our task is to find the 2x2 sub-matrix in the top-left corner of the matrix that is formed by 0s and the number.
+
+For Case 0, the sub-matrix is [[2, 2], [2, 2]].
+For Case 1, the sub-matrix is [[0, 8], [8, 8]].
+For Case 2, the sub-matrix is [[5, 5], [0, 5]].
+
+In each case, we simply list the elements of the sub-matrix in order.

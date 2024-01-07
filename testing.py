@@ -1,8 +1,8 @@
 import re
 import os
 
-COMP_PATH = "outputs/starling-outputs-train-0.5/"
-OUTPUTS_PATH = "answers/train-answers/"
+COMP_PATH = "outputs/starling-outputs-eval-0.5/"
+OUTPUTS_PATH = "answers/eval-answers/"
 
 matrix_pattern = re.compile(r"((\s*\[\s*(\d+(?:\s*,\s*\d+)*)\s*\]\s*)+)")
 total = 0
