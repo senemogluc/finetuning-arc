@@ -1,0 +1,7 @@
+Here is the last input and its corresponding output grid:
+
+Input:
+[0, 0, 0, 3, 0, 8, 2, 9, 0, 7, 0, 8, 0, 0, 0, 5, 4, 0]
+
+Output grid (Output):
+[0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]

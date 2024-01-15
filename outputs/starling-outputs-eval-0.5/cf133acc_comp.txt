@@ -1,0 +1,68 @@
+Here's a step-by-step breakdown of the reasoning and transformation for each case:
+
+Case 1:
+
+1. The first row has 3 occurrences of 3, which form an object that persists across the entire length of the grid. This forms a horizontal line in the output grid.
+2. The second row has 3 occurrences of 0, forming another horizontal line in the output grid.
+3. The third and fourth rows have 3 occurrences of 3, which form two vertical lines in the output grid.
+4. The fifth row has a single 0 at the beginning, forming a single pixel in the output grid.
+5. The sixth row has 6, 6, and 6, forming a diagonal line in the output grid.
+6. The seventh row has 6 occurrences of 6, which form two horizontal lines in the output grid.
+7. The eighth row is filled with 0s, forming a single pixel in the output grid.
+8. The ninth and tenth rows have 4 occurrences of 4, forming two vertical lines in the output grid.
+9. The eleventh row has a single 0 at the beginning, forming a single pixel in the output grid.
+10. The twelfth row has 4 occurrences of 4, which form two horizontal lines in the output grid.
+
+Output:
+  [0, 3, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0]
+  [0, 3, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0]
+  [0, 3, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0]
+  [3, 3, 3, 3, 3, 3, 3, 0, 0, 3, 3, 3, 3, 3, 3]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 6, 6, 6, 0, 6, 6, 6, 6, 6]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [3, 3, 3, 3, 3, 3, 3, 7, 7, 3, 3, 3, 3, 3, 3]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0]
+  [0, 0, 0, 1, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0]
+  [0, 0, 0, 1, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0]
+  [0, 0, 0, 1, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0]
+  [0, 0, 0, 1, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0]
+
+Case 2:
+
+1. The first row has 3 occurrences of 3, forming a horizontal line in the output grid.
+2. The second and third rows have 8 occurrences of 8, forming two horizontal lines in the output grid.
+3. The fourth and fifth rows have 8 occurrences of 8, forming two horizontal lines in the output grid.
+4. The sixth row has a single 0 at the beginning, forming a single pixel in the output grid.
+5. The seventh row has 6 occurrences of 6, forming a diagonal line in the output grid.
+6. The eighth row is filled with 0s, forming a single pixel in the output grid.
+7. The ninth and tenth rows have 3 occurrences of 3, forming two horizontal lines in the output grid.
+8. The eleventh row has a single 0 at the beginning, forming a single pixel in the output grid.
+9. The twelfth row has 3 occurrences of 3, which form two horizontal lines in the output grid.
+
+Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 8, 0, 8, 8, 0, 8, 8, 8, 0, 8, 8, 8, 8, 8]
+  [8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [9, 0, 9, 9, 9, 9, 5, 5, 5, 5, 5, 5, 5, 5, 5]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+
+Case 3:
+
+1. The first row has 2 occurrences of 2, forming a horizontal line in the output grid.
+2. The second and third rows have 6 occurrences of 6, forming two horizontal lines in the output grid.
+3. The fourth and fifth rows have 5 occurrences of 5, forming two horizontal lines in the output grid.
+4. The sixth row has a single 0 at the beginning, forming a single pixel in the output grid.
+5. The seventh row has 9 occurrences of 9, forming a horizontal line in the output grid.
+6. The eighth and ninth rows have 4 occurrences of 4, forming two horizontal lines in the output grid.
+7. The tenth row has a single 0 at the beginning,

@@ -1,0 +1,29 @@
+The output for the last input is:
+
+  [0, 7, 7, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0]
+  [7, 7, 7, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0]
+  [0, 7, 7, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0]
+
+Here are the steps to arrive at this output:
+
+1. Identify and group objects with the same color value (5).
+   [0, 2, 2, 0, 8, 0, 0, 8, 0, 8, 0, 0, 0, 0, 8, 0, 0, 0, 0]
+   => [0, 0, 2, 0, 5, 0, 0, 5, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0]
+   [0, 4, 4, 0, 3, 0, 0, 0, 0, 3, 0, 0, 0, 0, 3, 0, 0, 0, 0]
+   => [0, 0, 4, 0, 5, 0, 0, 4, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0]
+   ...
+   
+2. Transform the grid by applying the rules:
+   a. If two adjacent objects have the same color value, merge them into one object with that color value.
+      [0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0] => [0, 0, 0, 0, 10, 0, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0, 0]
+      [0, 6, 6, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0] => [0, 6, 6, 0, 10, 0, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0, 0]
+      ...
+   
+   b. If two adjacent objects with the same color value have a different number of occurrences, merge them into one object with the sum of their color values.
+      [0, 7, 7, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0] => [0, 7, 7, 0, 10, 0, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0, 0]
+      ...
+   
+3. The final output grid is the result of these transformations:
+  [0, 7, 7, 0, 10, 0, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0, 0]
+  [7, 7, 7, 0, 10, 0, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0, 0]
+  [0, 7, 7, 0, 10, 0, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0, 0]

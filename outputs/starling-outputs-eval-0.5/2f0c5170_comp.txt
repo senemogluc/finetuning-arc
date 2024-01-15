@@ -1,0 +1,78 @@
+Here's my reasoning for each case and the corresponding output grid:
+
+Case 0:
+- The grid has a central block of 8s surrounded by 0s. The 8s are connected to each other both horizontally and vertically, forming a square. There is also an isolated 0 in the top left corner.
+- In this case, we can consider the entire square of 8s as one object, with all the 0s outside being separate objects. The transformation rule would be to keep the square of 8s intact and remove all the 0s outside it.
+- Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8]
+  [0, 0, 8, 8, 8, 8, 8, 8, 8]
+
+Case 1:
+- The grid has a central block of 8s surrounded by 0s. There are three pairs of connected 4s outside the square of 8s, with one pair on the left and another on the right.
+- In this case, we can consider the entire square of 8s as one object, along with the two pairs of connected 4s as separate objects. The transformation rule would be to keep the square of 8s intact and remove all the 0s outside it, leaving only the two pairs of connected 4s.
+- Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 4, 0, 0, 0, 0, 0]
+  [0, 0, 4, 8, 8, 8, 8, 8, 8]
+  [0, 0, 0, 8, 8, 8, 8, 8, 8]
+  [0, 0, 0, 8, 8, 8, 8, 8, 8]
+  [0, 0, 4, 8, 8, 8, 8, 8, 8]
+  [0, 0, 0, 8, 8, 8, 8, 8, 8]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 4, 8, 8, 8, 8, 8, 8]
+  [0, 0, 0, 8, 8, 8, 8, 8, 8]
+  [0, 0, 0, 8, 8, 8, 8, 8, 8]
+  [0, 0, 4, 8, 8, 8, 8, 8, 8]
+  [0, 0, 0, 8, 8, 8, 8, 8, 8]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 4, 8, 8, 8, 8, 8, 8]
+  [0, 0, 0, 8, 8, 8, 8, 8, 8]
+  [0, 0, 0, 8, 8, 8, 8, 8, 8]
+  [0, 0, 4, 8, 8, 8, 8, 8, 8]
+
+Case 2:
+- The grid has a central block of 8s surrounded by 0s. There are two pairs of connected 4s outside the square of 8s, with one pair on the left and another on the right.
+- In this case, we can consider the entire square of 8s as one object, along with the two pairs of connected 4s as separate objects. The transformation rule would be to keep the square of 8s intact and remove all the 0s outside it, leaving only the two pairs of connected 4s.
+- Output:
+  [0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 4, 0, 0, 0]
+  [0, 0, 4, 8, 8, 8, 8]
+  [0, 0, 0, 8, 8, 8, 8]
+  [0, 0, 0, 8, 8, 8, 8]
+  [0, 0, 4, 8, 8, 8, 8]
+  [0, 0, 0, 8, 8, 8, 8]
+  [0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 4, 8, 8, 8, 8]
+  [0, 0, 0, 8, 8, 8, 8]
+  [0, 0, 0, 8, 8, 8, 8]
+  [0, 0, 4, 8, 8, 8, 8]
+  [0, 0, 0, 8, 8, 8, 8]
+  [0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 4, 8, 8, 8, 8]
+  [0, 0, 0, 8, 8, 8, 8]
+  [0, 0, 0

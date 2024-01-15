@@ -1,0 +1,30 @@
+Case 5:
+Input:
+  [9, 9, 0, 9, 0]
+  [0, 0, 9, 0, 9]
+  [0, 0, 0, 9, 9]
+  [4, 4, 4, 0, 4]
+  [4, 0, 4, 4, 4]
+  [4, 4, 0, 0, 0]
+
+To find the output grid, we can follow these steps:
+
+1. Identify objects and their relationships: We have three main objects in the input grid - the top-left object (9, 9, 0, 9), the middle object (0, 0, 9, 0, 9), and the bottom-right object (4, 4, 4, 0, 4). These objects are connected horizontally.
+2. Apply counting and basic arithmetic: Count the number of occurrences of each value in the input grid. We have 3 occurrences of 9, 1 occurrence of 0 (background), and 5 occurrences of 4.
+3. Use elementary geometry and topology concepts: Since the objects are connected horizontally, we can merge them into a single object by adding their values together. For example, the top-left and middle objects become (9 + 0 + 9 + 0 + 9) = 27, and the bottom-right object remains as 4.
+4. Transform the grid based on the identified relationships and goals: Merge the three main objects into a single object by adding their values together. The resulting output grid is:
+
+Output:
+  [0, 27, 0, 0, 0]
+  [0, 0, 9, 0, 9]
+  [0, 0, 0, 9, 9]
+  [0, 0, 4, 0, 0]
+  [0, 0, 0, 0, 0]
+
+So, the output grid for the last input is:
+
+  [0, 27, 0, 0, 0]
+  [0, 0, 9, 0, 9]
+  [0, 0, 0, 9, 9]
+  [0, 0, 4, 0, 0]
+  [0, 0, 0, 0, 0]

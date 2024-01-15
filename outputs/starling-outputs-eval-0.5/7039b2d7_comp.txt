@@ -1,0 +1,58 @@
+Here's a step-by-step analysis of the transformation rules and reasoning for each case:
+
+Case 0:
+
+In this case, we have a grid with only one object (5) present in all the cells. The objects seem to be connected horizont and vertically. Based on the priors, the transformation rule can be inferred as follows:
+
+1. Connect all the 5's both horizontally and vertically.
+2. Remove the 0's (background) from the grid.
+3. The output grid will have only the connected 5's.
+
+Applying this transformation rule to the last input of Case 0, we get:
+
+Output:
+  [5, 5, 5, 5]
+  [5, 5, 5, 5]
+  [5, 5, 5, 5]
+
+Case 1:
+
+In this case, the grid has two types of objects (4 and 1). The 4's are connected horizontally and vertically. Based on the priors, the transformation rule can be inferred as follows:
+
+1. Connect all the 4's both horizontally and vertically.
+2. Remove all the 1's from the grid.
+3. The output grid will have only the connected 4's.
+
+Applying this transformation rule to the last input of Case 1, we get:
+
+Output:
+  [1, 1, 1]
+  [1, 1, 1]
+
+Case 2:
+
+In this case, the grid has one type of object (1) with a different value for the background (0). Based on the priors, the transformation rule can be inferred as follows:
+
+1. Connect all the 1's horizontally and vertically.
+2. Remove all the 0's from the grid.
+3. The output grid will have only the connected 1's.
+
+Applying this transformation rule to the last input of Case 2, we get:
+
+Output:
+  [1, 1, 1]
+  [1, 1, 1]
+
+Case 3:
+
+In this case, the grid has one type of object (3) with a different value for the background (0). The 3's are connected horizontally and vertically. Based on the priors, the transformation rule can be inferred as follows:
+
+1. Connect all the 3's both horizontally and vertically.
+2. Remove all the 0's from the grid.
+3. The output grid will have only the connected 3's.
+
+Applying this transformation rule to the last input of Case 3, we get:
+
+Output:
+  [1, 1, 3, 1, 3]
+  [1, 1, 3, 1, 3]

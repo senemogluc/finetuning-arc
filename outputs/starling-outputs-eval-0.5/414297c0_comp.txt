@@ -1,0 +1,28 @@
+Here's a step-by-step breakdown of the transformation rules applied to the grid and reasoning for each step:
+
+1. Identify adjacent objects with the same value (e.g., 2, 3, 4). These are the primary objects that will be transformed together.
+2. Determine which objects form a single object by considering their adjacency and values. For example, in the first case, the 1s connected to each other are part of the same object, while the 0s and 3s are separate objects.
+3. Transform the primary objects based on their values:
+   - 2s become 4s.
+   - 3s become 5s.
+   - 4s become 6s.
+   - 5s become 7s.
+   - 6s become 8s.
+   - 7s become 9s.
+4. Replace the original objects with their transformed counterparts, and fill in any gaps left by the transformation with 0s. For example, in the first case, the 2s are replaced by 4s, the 3s by 5s, and so on.
+5. Ensure that the resulting grid is consistent with the rules applied (i.e., no object overlaps and all objects remain connected).
+6. If needed, apply step 3 again to any remaining primary objects until there are no more transformations left.
+7. The output grid will have the same dimensions as the input grid but may be smaller or larger depending on the transformations applied.
+
+Here's a step-by-step explanation of the transformation rules applied to the last input:
+
+1. Identify adjacent objects with the same value (e.g., 2, 3, 4). In this case, there are no primary objects that share the same value.
+2. Determine which objects form a single object by considering their adjacency and values. Here, there are no primary objects as all values are unique.
+3. Since there are no primary objects to transform, the grid remains unchanged.
+4. The output grid is the same as the input grid:
+
+   Input:
+   0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+   Output:
+   0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]

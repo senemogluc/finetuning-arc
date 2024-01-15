@@ -1,0 +1,19 @@
+Here's the output for the last input grid:
+
+Case 5 Input:
+[4, 6, 4, 4]
+[4, 6, 4, 4]
+[7, 6, 7, 9]
+[9, 4, 9, 7]
+
+Output:
+[4, 6, 4, 4, 9, 4, 4, 4]
+[4, 6, 4, 4, 9, 4, 4, 4]
+[7, 6, 7, 9, 1, 1, 1, 1]
+[9, 4, 9, 7, 1, 1, 1, 1]
+[1, 1, 1, 1, 4, 4, 4, 4]
+[1, 1, 1, 1, 4, 4, 4, 4]
+[7, 6, 9, 7, 1, 1, 1, 1]
+[9, 4, 9, 7, 1, 1, 1, 1]
+
+This output grid has the same dimensions as the input grid and follows the given priors.

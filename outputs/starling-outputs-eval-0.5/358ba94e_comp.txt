@@ -1,0 +1,77 @@
+Here's the reasoning for each step:
+
+1. Identify objects and their relationships: The objects are groups of same numbers adjacent to each other. For example, in Input Case 3, we can identify objects as (0, 0), (2, 2), (0, 2), (2, 0), (0, 0).
+2. Consider persistence and transformations: Objects persist despite noise or occlusion by other objects. For example, in Input Case 3, the object (2, 2) remains intact even when it is surrounded by zeros.
+3. Recognize tasks involving counting or sorting objects: Counting objects can help identify goals or intentions guiding transformations. For example, in Input Case 4, we can count the number of ones and zeros to understand their distribution.
+4. Apply basic arithmetic for numerical aspects: Basic arithmetic operations like addition, subtraction, multiplication, and division can be applied to numerical aspects of the grid, such as counting the total number of occurrences of a specific number.
+5. Use elementary geometry and topology concepts: Elementary geometry and topology concepts, such as adjacency, connectedness, and enclosure, can help identify and understand the relationships between objects in the grid.
+
+Based on these steps, we can generate the output for each case:
+
+Case 1 Output:
+  [7, 7, 7, 7, 7]
+  [7, 0, 7, 7, 7]
+  [7, 7, 7, 7, 0]
+  [7, 0, 7, 7, 7]
+  [7, 7, 7, 7, 7]
+
+Case 2 Output:
+  [8, 8, 8, 8, 8]
+  [8, 0, 8, 0, 8]
+  [8, 8, 8, 8, 8]
+  [8, 0, 8, 0, 8]
+  [8, 8, 8, 8, 8]
+
+Case 3 Output:
+  [2, 2, 2, 2, 2]
+  [2, 2, 2, 2, 2]
+  [2, 0, 2, 2, 2]
+  [2, 2, 2, 2, 2]
+  [2, 2, 2, 2, 2]
+
+Case 4 Output:
+  [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+  [1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0]
+  [1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+  [1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1]
+  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1]
+  [1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 0, 1]
+  [0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1]
+  [1, 1, 1, 1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1]
+  [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Here are the outputs for each case:
+
+Case 1 Output:
+  [7, 7, 7, 7, 7]
+  [7, 0, 7, 7, 7]
+  [7, 7, 7, 7, 0]
+  [7, 0, 7, 7, 7]
+  [7, 7, 7, 7, 7]
+
+Case 2 Output:
+  [8, 8, 8, 8, 8]
+  [8, 0, 8, 0, 8]
+  [8, 8, 8, 8, 8]
+  [8, 0, 8, 0, 8]
+  [8, 8, 8, 8, 8]
+
+Case 3 Output:
+  [2, 2, 2, 2, 2]
+  [2, 2, 2, 2, 2]
+  [2, 0, 2, 2, 2]
+  [2, 2, 2, 2, 2]
+  [2, 2, 2, 2, 2]
+
+Case 4 Output:
+  [1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0]
+  [1, 1, 1, 1, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0]
+  [1, 0, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0,

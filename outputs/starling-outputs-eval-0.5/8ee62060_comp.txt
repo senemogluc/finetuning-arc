@@ -1,0 +1,43 @@
+Based on the provided input and previous cases, it seems that the transformation rule involves moving objects with a value of 1 or 8 to the left or right, depending on their position relative to other objects. Here's the reasoning for each step:
+
+1. Move all 1s to the right if they are surrounded by 0s and 8s.
+2. Move all 8s to the left if they are surrounded by 0s and 1s.
+3. If a 1 or 8 is at an edge of the grid, it will stay in place.
+4. If a 1 or 8 is adjacent to another 1 or 8, they will swap positions.
+5. If a 1 or 8 is surrounded by other 1s or 8s, it will stay in place.
+
+Now, let's apply these rules to the last input:
+
+Input:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 1]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 1, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 1, 8, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 8, 1, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 1, 8, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 8, 1, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 1, 8, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 8, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 1, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 8, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [1, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [8, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Applying the rules:
+
+Output:
+  [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 1]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 1, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 8, 1, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 1, 8, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]
+  [8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 1, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 1, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 1, 0, 0, 0]

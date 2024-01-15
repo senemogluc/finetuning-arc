@@ -1,0 +1,46 @@
+To find the transformation rule, let's analyze each case and identify common patterns or goals.
+
+Case 0:
+Goal: Merge objects with the same number (1) into a single object.
+Transformation: Combine adjacent 1s horizontally.
+
+Case 1:
+Goal: Separate objects with different numbers (1 and 2).
+Transformation: Split adjacent 1s vertically when encountering a 2.
+
+Case 2:
+Goal: Merge objects with the same number (0) into a single object.
+Transformation: Combine adjacent 0s horizontally.
+
+Case 3:
+Goal: Separate objects with different numbers (1 and 2).
+Transformation: Split adjacent 1s vertically when encountering a 2.
+
+Based on the analysis, we can induce the following transformation rule:
+
+1. Merge objects with the same number horizontally if possible.
+2. If a different number is encountered while merging, split the current object and start a new one.
+3. Repeat steps 1 and 2 until all objects are merged or split.
+
+Now let's apply this rule to the last input:
+
+Input:
+  [1, 0, 0, 1, 1]
+  [1, 1, 0, 1, 0]
+  [0, 0, 0, 0, 0]
+  [1, 1, 0, 2, 2]
+  [0, 1, 0, 2, 2]
+
+Following the transformation rule:
+
+1. Merge the first two 1s horizontally to create a single object with value 1.
+2. Move on to the next row and merge the two 1s horizontally again. This creates an object with value 2.
+3. Repeat this process for the rest of the grid, merging objects horizontally when possible. When encountering different numbers (0 or 2), split the current object and start a new one.
+4. The final output is:
+
+Output:
+  [1]
+  [1]
+  [2]
+  [2]
+  [2]

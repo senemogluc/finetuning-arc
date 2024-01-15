@@ -1,0 +1,65 @@
+Here's a step-by-step analysis and reasoning for each case:
+
+Case 0:
+The transformation rule seems to involve grouping adjacent objects with the same value. The input grid has several isolated single values (e.g., 2, 3), which are not part of any larger object. Thus, we can merge these isolated values into a single object by adding them together, and then distribute the result across each cell in that object's area.
+
+Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 2, 5, 5, 5, 5, 5, 5, 5, 5, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0]
+  [0, 0, 2, 5, 5, 5, 5, 5, 5, 5, 4, 0, 0]
+  [0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Case 1:
+The transformation rule seems to involve counting objects and their sizes. We can count the number of objects in each row or column and then apply that count to each cell in that object's area.
+
+Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Case 2:
+The transformation rule seems to involve counting objects and their sizes. Similar to Case 1, we can count the number of objects in each row or column and then apply that count to each cell in that object's area.
+
+Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 2, 5, 5, 5, 5, 5, 5, 5, 2, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Case 3:
+The transformation rule seems to involve counting objects and their sizes. Similar to the previous cases, we can count the number of objects in each row or column and then apply that count to each cell in that object's area.
+
+Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0,

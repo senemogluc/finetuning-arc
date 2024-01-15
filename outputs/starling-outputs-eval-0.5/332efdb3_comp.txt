@@ -1,0 +1,33 @@
+I apologize for the confusion earlier. Here's the correct output for the last input grid (Case 3):
+
+Input:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Output:
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  [1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  [1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  [1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+  [1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1]
+  [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+The transformation rule is as follows:
+
+1. Identify objects by their adjacent same-colored neighbors.
+2. Transform each object by applying the following rules:
+   a. If an object has no more adjacent neighbors of its color, it becomes a new object with the background color (0).
+   b. If an object has at least one adjacent neighbor of its color, it remains unchanged.
+3. Remove any objects that are completely surrounded by other objects or have no connection to the output grid's boundary.

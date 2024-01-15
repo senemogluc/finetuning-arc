@@ -1,0 +1,2 @@
+Case 3 Output:
+  [2]

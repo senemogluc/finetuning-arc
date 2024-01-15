@@ -1,0 +1,16 @@
+Here are the steps to get to the output grid from the last given input:
+
+1. Identify and merge adjacent objects with the same value:
+   In the original grid, we can identify objects as groups of connected 8s or 0s. For example, in the first row, there are two separate 8s, one at position (0, 0) and another at position (1, 0). We can merge these adjacent 8s into a single object with a value of 8.
+   Similarly, we have an object with a value of 0 in the first row at position (2, 0), which is also part of a larger object with a value of 0 that spans several rows and columns. We can merge these objects together to create a single object with a value of 0.
+   Repeat this process for all objects in the grid.
+
+2. Count the number of objects:
+   After merging, we have a new grid where each object is represented by a single value. For example, the first row of the merged grid would be [8, 8, 0]. Here, there are two distinct objects with values 8 and 0.
+
+3. Create an output grid:
+   The output grid will have the same dimensions as the input grid. In this case, the output grid will also be a 2D array of size 15x15. Since we merged objects in step 2, the values in the output grid will be different from the original grid. For example, the first row of the output grid would be [8, 8, 0].
+
+Here's the resulting output grid:
+
+[8, 8, 0]

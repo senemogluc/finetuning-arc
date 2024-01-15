@@ -1,0 +1,19 @@
+Case 3:
+
+To determine the transformation rule, we can analyze the previous cases and identify patterns. In all cases, objects with the same number are connected horizontally or vertically. The grid is rotated 90 degrees clockwise, preserving the connectivity of the objects.
+
+Applying this transformation to the last input grid:
+
+Input:
+  [7, 0, 0, 0, 5]
+  [0, 6, 0, 4, 0]
+  [0, 0, 2, 0, 0]
+  [0, 4, 0, 6, 0]
+  [5, 0, 0, 0, 7]
+
+Output:
+  [5, 4, 7]
+  [2, 6, 4]
+  [7, 0, 5]
+
+This output is consistent with the transformation rule derived from the previous input-output pairs.

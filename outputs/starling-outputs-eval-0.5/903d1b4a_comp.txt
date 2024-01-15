@@ -1,0 +1,3 @@
+The output of the last input grid is:
+
+[1, 8, 2, 8, 9, 7, 9, 7, 7, 9, 7, 9, 8, 2, 8, 1]

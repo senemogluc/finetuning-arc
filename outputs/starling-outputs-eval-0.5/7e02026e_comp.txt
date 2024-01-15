@@ -1,0 +1,23 @@
+Here's the reasoning for each step and the final output grid:
+
+1. Identify adjacent numbers with the same value (e.g., [8, 0, 8]). Recognize that these form a single object. In this case, we have multiple such objects in the input grid.
+2. Consider the transformation rules applied to each object:
+   - Objects may be rotated or translated while maintaining their shape and size. For example, [8, 0, 8] can be transformed into [8, 8, 0].
+   - Counting and basic arithmetic are used to recognize patterns and relationships between objects (e.g., finding the average of adjacent numbers). However, this step doesn't seem necessary for this specific input.
+3. Apply the transformation rules to each object in the grid while maintaining their persistence:
+   - For example, [8, 0, 8] becomes [8, 8, 0].
+4. Ensure that the output grid is consistent with the transformation rules applied and maintains the same size as the input grid.
+5. The final output grid for the last input is:
+
+  [8, 0, 8, 8, 8, 8, 8, 0, 8, 0, 8, 0]
+  [8, 0, 8, 8, 0, 0, 8, 0, 8, 0, 0, 0]
+  [8, 8, 8, 8, 0, 0, 0, 8, 8, 8, 8, 8]
+  [8, 0, 0, 0, 8, 0, 8, 8, 0, 0, 8, 0]
+  [0, 8, 8, 8, 0, 8, 0, 8, 8, 0, 0, 8]
+  [0, 0, 8, 8, 8, 0, 0, 0, 0, 0, 0, 0]
+  [8, 0, 8, 8, 0, 8, 8, 0, 8, 0, 0, 0]
+  [0, 8, 0, 8, 0, 0, 8, 8, 8, 8, 8, 8]
+  [0, 0, 0, 8, 8, 0, 0, 8, 0, 8, 0, 0]
+  [0, 0, 0, 0, 8, 0, 8, 8, 0, 8, 8, 0]
+  [0, 0, 0, 8, 8, 0, 8, 8, 0, 8, 8, 8]
+  [8, 8, 8, 0, 8, 0, 0, 0, 0, 8, 8, 8]

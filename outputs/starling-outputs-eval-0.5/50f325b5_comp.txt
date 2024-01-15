@@ -1,0 +1,59 @@
+Here's a step-by-step breakdown of the transformation rules applied to the last input grid:
+
+1. Input: [7, 3, 2, 2, 4, 3, 7, 2, 7, 0, 7, 3, 4, 0, 3, 2, 4]
+   Transformation Rule 1: Identify objects that are adjacent to each other and persist through noise or occlusion.
+   Output: [7, 3, 2, 2, 4, 3, 7, 2, 7, 0, 7, 3, 4, 0, 3, 2, 4] (no change)
+
+2. Input: [0, 2, 2, 2, 2, 3, 0, 3, 0, 3, 2, 0, 0, 3, 0, 7]
+   Transformation Rule 1: Identify objects that are adjacent to each other and persist through noise or occlusion.
+   Output: [0, 2, 2, 2, 2, 3, 0, 3, 0, 3, 2, 0, 0, 3, 0, 7] (no change)
+
+3. Input: [3, 2, 0, 3, 0, 0, 4, 0, 0, 0, 7, 0, 0, 7, 0, 3]
+   Transformation Rule 1: Identify objects that are adjacent to each other and persist through noise or occlusion.
+   Output: [3, 2, 0, 3, 0, 0, 4, 0, 0, 0, 7, 0, 0, 7, 0, 3] (no change)
+
+4. Input: [4, 3, 4, 3, 2, 4, 3, 8, 0, 2, 7, 3, 0, 4, 0, 3, 2]
+   Transformation Rule 1: Identify objects that are adjacent to each other and persist through noise or occlusion.
+   Output: [4, 3, 4, 3, 2, 4, 3, 8, 0, 2, 7, 3, 0, 4, 0, 3, 2] (no change)
+
+5. Input: [2, 0, 0, 7, 3, 3, 3, 2, 2, 3, 3, 2, 0, 2, 4, 7, 2, 0]
+   Transformation Rule 1: Identify objects that are adjacent to each other and persist through noise or occlusion.
+   Output: [2, 0, 0, 7, 3, 3, 3, 2, 2, 3, 3, 2, 0, 2, 4, 7, 2, 0] (no change)
+
+6. Input: [0, 2, 2, 0, 7, 3, 8, 8, 8, 4, 3, 0, 8, 0, 2, 3, 0, 7]
+   Transformation Rule 1: Identify objects that are adjacent to each other and persist through noise or occlusion.
+   Output: [0, 2, 2, 0, 7, 3, 8, 8, 8, 4, 3, 0, 8, 0, 2, 3, 0, 7] (no change)
+
+7. Input: [7, 0, 2, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0]
+   Transformation Rule 1: Identify objects that are adjacent to each other and persist through noise or occlusion.
+   Output: [7, 0, 2, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0] (no change)
+
+8. Input: [3, 0, 0, 4, 0, 2, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0]
+   Transformation Rule 1: Identify objects that are adjacent to each other and persist through noise or occlusion.
+   Output: [3, 0, 0, 4, 0, 2, 0, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0] (no change)
+
+9. Input: [0, 3, 3, 3, 3, 4, 3, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   Transformation Rule 1: Identify objects that are adjacent to each other and persist through noise or occlusion.
+   Output: [0, 3, 3, 3, 3, 4, 3, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0] (no change)
+
+10. Input: [2, 0, 0, 2, 0, 7, 0, 2, 0, 2, 0, 3, 0, 4, 0, 0, 0, 0, 0]
+   Transformation Rule 1: Identify objects that are adjacent to each other and persist through noise or occlusion.
+   Output: [2, 0, 0, 2, 0, 7, 0, 2, 0, 2, 0, 3, 0, 4, 0, 0, 0] (no change)
+
+11. Input: [2, 0, 0, 0, 0, 4, 0, 2, 0, 0, 0, 0, 4, 3, 7, 0, 0, 0, 0]
+   Transformation Rule 1: Identify objects that are adjacent to each other and persist through noise or occlusion.
+   Output: [2, 0, 0, 0, 0, 4, 0, 2, 0, 0, 0, 4, 3, 7, 0, 0, 0] (no change)
+
+12. Input: [4, 3, 0, 8, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   Transformation Rule 1: Identify objects that are adjacent to each other and persist through noise or occlusion.
+   Output: [4, 3, 0, 8, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0] (no change)
+
+13. Input: [2, 3, 2, 0, 0, 7, 0, 0, 0, 4, 0, 3, 0, 0, 0, 0, 0]
+   Transformation Rule 4: Identify relationships or persistency of objects from one object to another. Consider 0 as background
+   Output: [2, 3, 2, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0] (no change)
+
+14. Input: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   Transformation Rule 4: Identify basic patterns in the grid.
+   Output: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] (no change)
+
+15. Input: [2, 3, 4, 0, 7, 0, 0, 4

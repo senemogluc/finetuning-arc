@@ -1,0 +1,87 @@
+Here's the reasoning for each case:
+
+Case 1:
+The transformation rule involves moving the 8s in a clockwise manner. The 8 at the top-right corner moves to the bottom-left corner, and the 8 at the bottom-right corner moves to the top-left corner.
+
+Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 4, 4, 4, 0, 0, 0, 0]
+  [0, 0, 0, 4, 0, 4, 0, 0, 0, 0]
+  [0, 0, 0, 4, 4, 4, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 4, 4, 4]
+  [0, 0, 0, 0, 0, 0, 0, 4, 0, 4]
+  [0, 0, 0, 0, 0, 0, 0, 4, 4, 4]
+
+Case 2:
+The transformation rule involves moving the 8s in a clockwise manner. The 8 at the top-right corner moves to the bottom-left corner, and the 8 at the bottom-right corner moves to the top-left corner.
+
+Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 8, 8, 8, 0, 0, 0, 0]
+  [0, 0, 0, 8, 0, 8, 0, 0, 0, 0]
+  [0, 0, 0, 8, 8, 8, 0, 0, 0, 0]
+
+Case 3:
+The transformation rule involves moving the 6s in a clockwise manner. The 6 at the top-right corner moves to the bottom-left corner, and the 6 at the bottom-right corner moves to the top-left corner.
+
+Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 6, 6, 6, 0, 0, 0]
+  [0, 0, 0, 0, 6, 0, 6, 0, 0, 0]
+  [0, 0, 0, 0, 6, 6, 6, 0, 0, 0]
+
+Case 4:
+The transformation rule involves moving the 6s in a clockwise manner. The 6 at the top-right corner moves to the bottom-left corner, and the 6 at the bottom-right corner moves to the top-left corner.
+
+Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 6, 6, 6, 0, 0, 0, 0, 0]
+  [0, 0, 6, 0, 6, 0, 0, 0, 0, 0]
+  [0, 0, 6, 6, 6, 0, 0, 0, 0, 0]
+
+Case 5:
+The transformation rule involves moving the 8s in a clockwise manner. The 8 at the top-right corner moves to the bottom-left corner, and the 8 at the bottom-right corner moves to the top-left corner.
+
+Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 8, 8, 8, 0, 0, 0, 0, 0]
+  [0, 0, 8, 0, 8, 0, 0, 0, 0, 0]
+  [0, 0, 8, 8, 8, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+Case 6:
+The transformation rule involves moving the 4s in a clockwise manner. The 4 at the top-right corner moves to the bottom-left corner, and the 4 at the bottom-right corner moves to the top-left corner.
+
+Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 4, 4, 4, 0, 0, 0]
+  [0, 0, 0, 0, 4, 0, 4, 0, 0, 0]
+  [0, 0, 0, 0, 4, 4, 4, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 4, 4, 4]
+  [0, 0, 0, 0, 0, 0, 0, 4, 0, 4]
+  [0, 0, 0, 0, 0, 0, 0, 4, 4, 4]
+
+In summary:
+
+Case 1 Output:
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+  [0, 0, 0, 0, 0, 0, 0, 0, 0,

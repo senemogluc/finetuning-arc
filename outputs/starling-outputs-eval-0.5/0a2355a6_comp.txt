@@ -1,0 +1,55 @@
+Here are the reasoning steps for each case:
+
+1. In this case, we can see that there are groups of objects with the same number (0-7) adjacent to each other. We can treat these groups as single objects and merge them together. The output will have fewer objects with merged numbers. 
+   Output:
+   [0, 0, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 4, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+2. In this case, we can group the objects with the same number (0-7) adjacent to each other and merge them together. Then, we can remove the background objects (0). The output will have fewer objects with merged numbers. 
+   Output:
+   [0, 0, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 4, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 3, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+3. In this case, we can group the objects with the same number (0-7) adjacent to each other and merge them together. Then, we can remove the background objects (0). The output will have fewer objects with merged numbers. 
+   Output:
+   [0, 0, 4, 4, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 4, 0, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0]
+   [0, 0, 4, 4, 4, 0, 4, 4, 4, 4, 4, 4, 0, 0]
+   [0, 0, 0, 0, 4, 4, 4, 4, 4, 4, 4, 4, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 3, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+4. In this case, we can group the objects with the same number (0-7) adjacent to each other and merge them together. Then, we can remove the background objects (0). The output will have fewer objects with merged numbers. 
+   Output:
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 8, 8, 8, 8, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 8, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 8, 8, 8, 8, 8, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 8, 0, 8, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 8, 8, 8, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+   [0, 0, 8, 8, 8, 8, 8, 8, 0, 0, 0, 0, 0, 0]
+
+For each case, the output grid is smaller than the input grid with merged numbers and background removed.

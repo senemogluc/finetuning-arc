@@ -1,0 +1,14 @@
+Here's a step-by-step reasoning for each case to find the transformation rule:
+
+Case 0:
+The grid has only zeros and one instance of non-zero value (2). There are no adjacent non-zero values, so the transformation rule is to keep the grid as it is.
+
+Case 1:
+1. The grid has two instances of non-zero values (3 and 5) that are adjacent horizontally. The transformation rule should merge these adjacent non-zero values into a single value (sum). In this case, 3 + 5 = 8.
+2. The grid also has another instance of adjacent non-zero values (4 and 3) vertically. The transformation rule should merge these adjacent non-zero values into a single value (sum). In this case, 4 + 3 = 7.
+3. All other zeros in the grid remain unchanged.
+
+Case 2:
+The grid has only zeros and one instance of non-zero value (1) that is surrounded by zeros. There are no adjacent non-zero values, so the transformation rule is to keep the grid as it is.
+
+For all these cases, the output grids are the same as the input grids since there are no transformations needed based on the given priors and conditions.
