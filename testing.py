@@ -28,3 +28,4 @@ for file in os.listdir(COMP_PATH):
             print("Correct!")
         
 print("Correct: " , correct, "/", total)
+print("Accuracy: ", correct/total)

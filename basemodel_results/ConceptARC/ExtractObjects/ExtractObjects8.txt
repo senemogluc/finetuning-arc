@@ -1,0 +1,30 @@
+GPT4 Correct User: Case 0:
+Input:
+[[3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], [3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 3, 3], [3, 3, 3, 3, 3, 3, 0, 3, 3, 0, 3, 3], [3, 3, 3, 3, 3, 3, 0, 3, 3, 0, 3, 3], [3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 3, 3], [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3], [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]]
+
+Output:
+[[3, 3], [3, 3]]
+
+Case 1:
+Input:
+[[4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4], [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4], [4, 4, 0, 4, 4, 4, 4, 4, 4, 4, 4], [4, 0, 4, 0, 4, 4, 4, 4, 4, 4, 4], [0, 4, 4, 4, 0, 4, 4, 4, 4, 4, 4], [4, 0, 4, 0, 4, 4, 0, 0, 0, 0, 4], [4, 4, 0, 4, 4, 4, 0, 4, 4, 0, 4], [4, 4, 4, 4, 4, 4, 0, 4, 4, 0, 4], [4, 4, 4, 4, 4, 4, 0, 4, 4, 0, 4], [4, 4, 4, 4, 4, 4, 0, 0, 0, 0, 4], [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4]]
+
+Output:
+[[0, 4, 0, 4, 4], [4, 4, 4, 4, 4], [0, 4, 0, 4, 4]]
+
+Test Case:
+Input:
+[[6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6], [6, 6, 6, 0, 0, 0, 0, 6, 6, 6, 6], [6, 6, 0, 6, 6, 6, 6, 0, 6, 6, 6], [6, 0, 6, 6, 6, 6, 6, 6, 0, 6, 6], [6, 6, 0, 6, 6, 6, 6, 0, 6, 6, 6], [6, 6, 6, 0, 0, 0, 0, 6, 6, 6, 6], [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6], [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]]
+
+Output: GPT4 Correct Assistant: [[6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6], [6, 6, 6, 0, 0, 0, 0, 6, 6, 6, 6], [6, 6, 0, 6, 6, 6, 6, 0, 6, 6, 6], [6, 0, 6, 6, 6, 6, 6, 6, 0, 6, 6], [6, 6, 0, 6, 6, 6, 6, 0, 6, 6, 6], [6, 6, 6, 0, 0, 0, 0, 6, 6, 6, 6], [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6], [6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]]
+
+Explanation:
+In each of the test cases, the input is a list of lists containing integers. The goal is to find a pattern or rule that can be applied to the input to generate the corresponding output. 
+
+For Case 0, the input consists of a repeating pattern of 3's followed by a 0. The output is a list containing the first two occurrences of this pattern, i.e., [3, 3] and [3, 3]. 
+
+For Case 1, the input also follows a pattern of 4's followed by a 0, but with some variations. The output is a list of the positions where the 0's appear, along with the surrounding 4's. 
+
+For Test Case, the input consists of a repeating pattern of 6's followed by a 0. The output is a list of the positions where the 0's appear, along with the surrounding 6's.
+
+In all cases, the pattern is identified, and the positions of the 0's (or any other specified value) along with the surrounding values are returned as the output.

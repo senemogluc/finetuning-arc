@@ -1,0 +1,30 @@
+GPT4 Correct User: Case 0:
+Input:
+[[0, 0, 0], [0, 0, 0], [0, 0, 0], [3, 3, 3], [0, 0, 0], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [0, 0, 0], [3, 3, 3], [3, 3, 3], [0, 0, 0], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]]
+
+Output:
+[[0, 0, 0], [0, 0, 0], [0, 0, 0], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [0, 0, 0], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [0, 0, 0], [3, 3, 3], [3, 3, 3], [0, 0, 0], [3, 3, 3]]
+
+Case 1:
+Input:
+[[0, 0, 0], [0, 0, 0], [3, 3, 3], [3, 3, 3], [3, 3, 3], [0, 0, 0], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [0, 0, 0], [3, 3, 3], [0, 0, 0], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3]]
+
+Output:
+[[0, 0, 0], [0, 0, 0], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [0, 0, 0], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [0, 0, 0], [3, 3, 3], [3, 3, 3], [3, 3, 3], [0, 0, 0], [3, 3, 3]]
+
+Test Case:
+Input:
+[[0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [0, 0, 0], [3, 3, 3], [3, 3, 3], [3, 3, 3], [3, 3, 3], [0, 0, 0], [3, 3, 3], [3, 3, 3], [0, 0, 0], [3, 3, 3], [0, 0, 0], [3, 3, 3], [3, 3, 3], [3, 3, 3]]
+
+Output: GPT4 Correct Assistant: Here are the detailed explanations for each case:
+
+Case 0:
+The input is a 2D list of integers. The output is the same as the input. The input and output both consist of alternating rows of zeros and rows with all values equal to 3. 
+
+Case 1:
+The input is a 2D list of integers. The output is the same as the input. Similar to Case 0, the input and output both consist of alternating rows of zeros and rows with all values equal to 3. 
+
+Test Case:
+The input is a 2D list of integers. The output is the same as the input. Again, the input and output both consist of alternating rows of zeros and rows with all values equal to 3, but with an additional row of all zeros at the beginning. 
+
+In all three cases, the output is the same as the input, with the only difference being the additional row of all zeros at the beginning in the test case.

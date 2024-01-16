@@ -1,0 +1,30 @@
+GPT4 Correct User: Case 0:
+Input:
+[[0, 1, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0], [0, 1, 1, 1, 0, 0], [0, 1, 1, 1, 3, 3], [0, 0, 0, 0, 3, 0], [0, 0, 0, 0, 3, 0]]
+
+Output:
+[[0, 1, 1, 1, 0, 0], [0, 1, 1, 1, 0, 0], [0, 1, 1, 1, 0, 0], [0, 1, 1, 1, 3, 3], [0, 0, 0, 0, 3, 3], [0, 0, 0, 0, 3, 3]]
+
+Case 1:
+Input:
+[[0, 0, 0, 6, 6, 6], [0, 0, 0, 6, 0, 6], [4, 4, 4, 6, 0, 0], [4, 4, 4, 0, 0, 0], [4, 0, 0, 0, 0, 0], [4, 0, 0, 0, 0, 0]]
+
+Output:
+[[0, 0, 0, 6, 6, 6], [0, 0, 0, 6, 6, 6], [4, 4, 4, 6, 6, 6], [4, 4, 4, 0, 0, 0], [4, 4, 4, 0, 0, 0], [4, 4, 4, 0, 0, 0]]
+
+Test Case:
+Input:
+[[5, 5, 5, 5, 0, 0], [0, 0, 5, 5, 0, 0], [0, 0, 5, 5, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 7, 0, 0, 0], [0, 0, 7, 7, 7, 0]]
+
+Output: GPT4 Correct Assistant: Here are the detailed explanations for each case:
+
+Case 0:
+The input matrix is a 6x6 matrix. Each row in the matrix is a state of a 6-cell maze, where 0 represents an empty cell and 1 represents a wall. The output matrix is the same as the input matrix, as there are no changes needed.
+
+Case 1:
+The input matrix has a different structure compared to Case 0. Each row in the matrix is a state of a 6-cell maze, but with two different types of walls represented by 0 and 4. The output matrix is the same as the input matrix, as there are no changes needed.
+
+Test Case:
+The input matrix has a similar structure to Case 1, but with different values for the walls. The output matrix is the same as the input matrix, as there are no changes needed. 
+
+In all three cases, the input and output matrices are the same, as there are no changes needed in the maze states.

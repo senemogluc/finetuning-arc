@@ -1,0 +1,48 @@
+GPT4 Correct User: Case 0:
+Input:
+[[3, 0, 0, 0, 3], [0, 3, 0, 3, 0], [0, 0, 3, 0, 0]]
+
+Output:
+[[3, 0, 0, 0, 3, 3, 0, 0, 0, 3], [0, 3, 0, 3, 0, 0, 3, 0, 3, 0], [0, 0, 3, 0, 0, 0, 0, 3, 0, 0]]
+
+Case 1:
+Input:
+[[2, 0, 2], [2, 0, 2], [2, 2, 2]]
+
+Output:
+[[2, 0, 2, 2, 0, 2], [2, 0, 2, 2, 0, 2], [2, 2, 2, 2, 2, 2]]
+
+Case 2:
+Input:
+[[4, 4, 4], [4, 0, 4], [4, 0, 4], [4, 0, 4], [4, 0, 4], [4, 4, 4]]
+
+Output:
+[[4, 4, 4, 4, 4, 4], [4, 0, 4, 4, 0, 4], [4, 0, 4, 4, 0, 4], [4, 0, 4, 4, 0, 4], [4, 0, 4, 4, 0, 4], [4, 4, 4, 4, 4, 4]]
+
+Test Case:
+Input:
+[[8, 0, 8], [0, 0, 0], [0, 8, 0], [0, 0, 0], [8, 0, 8]]
+
+Output: GPT4 Correct Assistant: Here are the steps to solve the problem:
+
+1. Initialize an empty matrix with the same dimensions as the input matrix.
+2. Iterate through each row of the input matrix.
+3. For each row, find the maximum value and its index.
+4. Replace the maximum value in the row with 0 and add the maximum value to the corresponding position in the output matrix.
+5. Repeat steps 3-4 for each row of the input matrix.
+6. The output matrix will contain all the maximum values from the input matrix.
+
+Applying these steps to the test case:
+
+Input: [[8, 0, 8], [0, 0, 0], [0, 8, 0], [0, 0, 0], [8, 0, 8]]
+
+1. Initialize an empty matrix with dimensions 5x3.
+2. Iterate through each row of the input matrix:
+   - For the first row, the maximum value is 8 and its index is 0. Replace 8 with 0 and add 8 to the corresponding position in the output matrix: [[8, 0, 0], [0, 0, 0], [0, 8, 0], [0, 0, 0], [8, 0, 0]]
+   - For the second row, the maximum value is 0 and its index is 1. Replace 0 with 0 and add 0 to the corresponding position in the output matrix: [[8, 0, 0], [0, 0, 0], [0, 8, 0], [0, 0, 0], [8, 0, 0]]
+   - For the third row, the maximum value is 8 and its index is 2. Replace 8 with 0 and add 8 to the corresponding position in the output matrix: [[8, 0, 0], [0, 0, 0], [0, 8, 0], [0, 0, 0], [8, 0, 0]]
+   - For the fourth row, the maximum value is 0 and its index is 3. Replace 0 with 0 and add 0 to the corresponding position in the output matrix: [[8, 0, 0], [0, 0, 0], [0, 8, 0], [0, 0, 0], [8, 0, 0]]
+   - For the fifth row, the maximum value is 8 and its index is 4. Replace 8 with 0 and add 8 to the corresponding position in the output matrix: [[8, 0, 0], [0, 0, 0], [0, 8, 0], [0, 0, 0], [8, 0, 0]]
+3. The output matrix is [[8, 0, 0], [0, 0, 0], [0, 8, 0], [0, 0, 0], [8, 0, 0]].
+
+Therefore, the answer is [[8, 0, 0], [0, 0, 0], [0, 8, 0], [0, 0, 0], [8, 0, 0]].

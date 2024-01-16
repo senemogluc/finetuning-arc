@@ -12,16 +12,31 @@ llm = Llama(
   verbose=False,
 )
 
-llm2 = Llama(
-  model_path="starling-lm-7b-alpha.Q6_K.gguf",
-  n_ctx=32768,  
-  n_threads_batch=2,
-  n_gpu_layers=-1,
-  n_batch=1024,
-  verbose=False,
-)
+PROMPT_PATH = "prompts/eval-prompts/"
 
-PROMPT_PATH = "prompts/train-prompts/"
+for prompt in os.listdir(PROMPT_PATH):
+    if os.path.exists('outputs/starling-outputs-eval-0.5/' + prompt.replace('prmt', 'comp')):
+        print(prompt, "already exists")
+        continue
+
+    with open(PROMPT_PATH + prompt) as f:
+        prompt_input = f.read()
+
+    if len(prompt_input) > 14000:
+        print(prompt, "too long")
+        continue
+
+    output = llm(
+        f"GPT4 User: {prompt_input}<|end_of_turn|>GPT4 Assistant:", 
+        max_tokens=2048, 
+        stop=["</s>"],  
+        temperature=0.5,
+    )
+        
+    with open('outputs/starling-outputs-eval-0.5/' + prompt.replace('prmt', 'comp'), mode='w+') as f:
+        f.write(output["choices"][0]['text'].strip())
+     
+    print(prompt + " done")
 
 # with open('prompts/concept-prompts/TopBottom2D2_prmt.txt') as f:
 #     prompt = f.read()
@@ -56,34 +71,6 @@ for prompt in os.listdir('data/training/train-prompts'):
     
     print(output["choices"][0]['text'].strip())
 """
-
-"""
-for prompt in os.listdir(PROMPT_PATH):
-    if os.path.exists('outputs/starling-outputs-train-0.5/' + prompt.replace('prmt', 'comp')):
-        print(prompt, "already exists")
-        continue
-
-    with open(PROMPT_PATH + prompt) as f:
-        prompt_input = f.read()
-
-    if len(prompt_input) > 14000:
-        print(prompt, "too long")
-        continue
-
-    output = llm(
-        f"GPT4 User: {prompt_input}<|end_of_turn|>GPT4 Assistant:", 
-        max_tokens=2048, 
-        stop=["</s>"],  
-        temperature=0.5,
-    )
-        
-    with open('outputs/starling-outputs-train-0.5/' + prompt.replace('prmt', 'comp'), mode='w+') as f:
-        f.write(output["choices"][0]['text'].strip())
-     
-    print(prompt + " done")
-"""
-
-
 
 # Chat Completion API
 """

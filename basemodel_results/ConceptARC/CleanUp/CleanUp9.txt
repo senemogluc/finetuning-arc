@@ -1,0 +1,36 @@
+GPT4 Correct User: Case 0:
+Input:
+[[0, 4, 0, 0, 2, 3], [4, 1, 1, 2, 1, 0], [0, 1, 0, 0, 2, 3], [0, 2, 0, 0, 1, 0], [0, 2, 1, 1, 1, 0], [0, 2, 0, 0, 4, 0]]
+
+Output:
+[[0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 1, 0], [0, 1, 0, 0, 1, 0], [0, 1, 0, 0, 1, 0], [0, 1, 1, 1, 1, 0], [0, 0, 0, 0, 0, 0]]
+
+Case 1:
+Input:
+[[0, 5, 5, 6, 5, 6], [0, 5, 0, 0, 0, 6], [0, 3, 0, 0, 0, 5], [0, 3, 0, 3, 0, 5], [0, 5, 5, 5, 5, 5], [6, 6, 0, 5, 0, 3]]
+
+Output:
+[[0, 5, 5, 5, 5, 5], [0, 5, 0, 0, 0, 5], [0, 5, 0, 0, 0, 5], [0, 5, 0, 0, 0, 5], [0, 5, 5, 5, 5, 5], [0, 0, 0, 0, 0, 0]]
+
+Test Case:
+Input:
+[[0, 0, 0, 8, 0, 9], [8, 4, 4, 7, 4, 0], [4, 0, 0, 0, 4, 0], [4, 7, 0, 0, 7, 0], [9, 9, 0, 7, 9, 9], [4, 4, 8, 4, 9, 0]]
+
+Output: GPT4 Correct Assistant: Here are the detailed explanations for the three cases:
+
+Case 0:
+The input matrix is a 6x6 matrix with all elements being either 0 or a specific number for each row. The output matrix is obtained by replacing each specific number in the input matrix with 0. 
+
+For example, in the first row of the input matrix, the specific number is 4. So, in the first row of the output matrix, all elements are replaced with 0. The same process is applied to all rows of the input matrix.
+
+Case 1:
+The input matrix is a 6x6 matrix with all elements being either 0 or a specific number for each row. The output matrix is obtained by replacing each specific number in the input matrix with 0. 
+
+For example, in the first row of the input matrix, the specific number is 5. So, in the first row of the output matrix, all elements are replaced with 0. The same process is applied to all rows of the input matrix.
+
+Test Case:
+The input matrix is a 6x6 matrix with all elements being either 0 or a specific number for each row. The output matrix is obtained by replacing each specific number in the input matrix with 0. 
+
+For example, in the first row of the input matrix, the specific number is 0. So, in the first row of the output matrix, all elements are replaced with 0. The same process is applied to all rows of the input matrix.
+
+In all three cases, the output matrix is obtained by replacing each specific number in the input matrix with 0, while keeping all other elements unchanged.
