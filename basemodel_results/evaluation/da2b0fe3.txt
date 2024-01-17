@@ -1,0 +1,40 @@
+GPT4 Correct User: Case 0:
+Input:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 2, 2, 2, 2, 0, 0, 0, 0], [0, 0, 2, 0, 0, 2, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 2, 0, 0, 2, 0, 0, 0, 0], [0, 0, 2, 2, 2, 2, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+
+Output:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 2, 2, 2, 2, 0, 0, 0, 0], [0, 0, 2, 0, 0, 2, 0, 0, 0, 0], [3, 3, 3, 3, 3, 3, 3, 3, 3, 3], [0, 0, 2, 0, 0, 2, 0, 0, 0, 0], [0, 0, 2, 2, 2, 2, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+
+Case 1:
+Input:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 1, 1, 0, 0, 0, 0], [0, 0, 1, 1, 0, 1, 1, 0, 0, 0], [0, 1, 1, 0, 0, 0, 1, 1, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 1, 0, 1, 1, 0, 0, 0], [0, 0, 0, 1, 1, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+
+Output:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 1, 1, 1, 0, 0, 0, 0], [0, 0, 1, 1, 0, 1, 1, 0, 0, 0], [0, 1, 1, 0, 0, 0, 1, 1, 0, 0], [3, 3, 3, 3, 3, 3, 3, 3, 3, 3], [0, 0, 1, 1, 0, 1, 1, 0, 0, 0], [0, 0, 0, 1, 1, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+
+Case 2:
+Input:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 5, 5, 5, 0, 5, 5, 0, 0, 0], [0, 5, 0, 0, 0, 0, 5, 0, 0, 0], [0, 5, 5, 5, 0, 5, 5, 0, 0, 0], [0, 5, 0, 0, 0, 0, 5, 0, 0, 0], [0, 5, 5, 5, 0, 5, 5, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+
+Output:
+[[0, 0, 0, 0, 3, 0, 0, 0, 0, 0], [0, 5, 5, 5, 3, 5, 5, 0, 0, 0], [0, 5, 0, 0, 3, 0, 5, 0, 0, 0], [0, 5, 5, 5, 3, 5, 5, 0, 0, 0], [0, 5, 0, 0, 3, 0, 5, 0, 0, 0], [0, 5, 5, 5, 3, 5, 5, 0, 0, 0], [0, 0, 0, 0, 3, 0, 0, 0, 0, 0], [0, 0, 0, 0, 3, 0, 0, 0, 0, 0], [0, 0, 0, 0, 3, 0, 0, 0, 0, 0], [0, 0, 0, 0, 3, 0, 0, 0, 0, 0]]
+
+Test Case:
+Input:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 2, 2, 2, 2, 0, 0, 0, 0, 0], [0, 2, 2, 2, 2, 0, 0, 0, 0, 0], [0, 2, 2, 2, 2, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 2, 2, 2, 2, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+
+Output: GPT4 Correct Assistant: Here are the descriptions for each case:
+
+Case 0:
+The input matrix is a 10x10 matrix filled with zeros. The output matrix is the same as the input matrix, but with the first row and first column filled with zeros.
+
+Case 1:
+The input matrix is a 10x10 matrix with some non-zero values along the first row and first column. The output matrix has the same pattern along the first row and first column, but with the values replaced by threes. The rest of the matrix remains the same.
+
+Case 2:
+The input matrix is a 10x10 matrix with some non-zero values along the first row and first column. The output matrix has the same pattern along the first row and first column, but with the values replaced by threes. The rest of the matrix remains the same, except for the first row and first column, which are replaced with zeros.
+
+Test Case:
+The input matrix is a 10x10 matrix with some non-zero values along the first row and first column. The output matrix has the same pattern along the first row and first column, but with the values replaced by threes. The rest of the matrix remains the same, except for the first row and first column, which are replaced with zeros.
+
+In general, for each case, the output matrix is obtained by replacing the values in the first row and first column of the input matrix with zeros, and replacing the non-zero values in the first row and first column with threes. The rest of the matrix remains the same as the input matrix.

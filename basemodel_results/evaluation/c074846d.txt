@@ -1,0 +1,92 @@
+GPT4 Correct User: Case 0:
+Input:
+[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 2, 2, 5, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]
+
+Output:
+[[0, 0, 0, 2, 0, 0, 0], [0, 0, 0, 2, 0, 0, 0], [0, 3, 3, 5, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]
+
+Case 1:
+Input:
+[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 2, 2, 2, 5, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]
+
+Output:
+[[0, 0, 0, 0, 2, 0, 0], [0, 0, 0, 0, 2, 0, 0], [0, 0, 0, 0, 2, 0, 0], [0, 3, 3, 3, 5, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]
+
+Case 2:
+Input:
+[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 0, 0, 0], [0, 0, 0, 5, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]
+
+Output:
+[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 3, 0, 0, 0], [0, 0, 0, 5, 2, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]
+
+Case 3:
+Input:
+[[0, 0, 0], [0, 5, 2], [0, 0, 0]]
+
+Output:
+[[0, 0, 0], [0, 5, 3], [0, 2, 0]]
+
+Case 4:
+Input:
+[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 5, 0, 0], [0, 0, 0, 0, 2, 0, 0], [0, 0, 0, 0, 2, 0, 0]]
+
+Output:
+[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 2, 2, 5, 0, 0], [0, 0, 0, 0, 3, 0, 0], [0, 0, 0, 0, 3, 0, 0]]
+
+Test Case:
+Input:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 5, 0, 0, 0, 0, 0], [0, 0, 0, 2, 0, 0, 0, 0, 0], [0, 0, 0, 2, 0, 0, 0, 0, 0], [0, 0, 0, 2, 0, 0, 0, 0, 0]]
+
+Output: GPT4 Correct Assistant: Here are the detailed explanations for each case:
+
+Case 1:
+Input:
+[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 2, 2, 2, 5, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]
+
+Output:
+[[0, 0, 0, 0, 2, 0, 0], [0, 0, 0, 0, 2, 0, 0], [0, 0, 0, 0, 2, 0, 0], [0, 3, 3, 3, 5, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]
+
+Explanation:
+In this case, we have a matrix with a single non-zero element in the bottom-right corner. We need to add the value of this element to the corresponding position in the matrix to its right and below. Since the element is 2, the value at position (4, 7) becomes 0 + 2 = 2, and the value at position (5, 7) becomes 0 + 2 = 2.
+
+Case 2:
+Input:
+[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 0, 0, 0], [0, 0, 0, 5, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]
+
+Output:
+[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 3, 0, 0, 0], [0, 0, 0, 5, 2, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]
+
+Explanation:
+In this case, we have a matrix with several non-zero elements. We need to add the value of each element to the corresponding position in the matrix to its right and below. Since the elements are 2 and 5, the value at position (3, 6) becomes 0 + 2 = 2, and the value at position (4, 6) becomes 0 + 5 = 5.
+
+Case 3:
+Input:
+[[0, 0, 0], [0, 5, 2], [0, 0, 0]]
+
+Output:
+[[0, 0, 0], [0, 5, 3], [0, 2, 0]]
+
+Explanation:
+In this case, we have a matrix with a single non-zero element in the middle. We need to add the value of this element to the corresponding position in the matrix to its right and below. Since the element is 2, the value at position (2, 2) becomes 0 + 2 = 2, and the value at position (2, 3) becomes 0 + 5 = 5.
+
+Case 4:
+Input:
+[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 5, 0, 0], [0, 0, 0, 0, 2, 0, 0], [0, 0, 0, 0, 2, 0, 0]]
+
+Output:
+[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 2, 2, 5, 0, 0], [0, 0, 0, 0, 3, 0, 0], [0, 0, 0, 0, 3, 0, 0], [0, 0, 0, 0, 3, 0, 0]]
+
+Explanation:
+In this case, we have a matrix with several non-zero elements. We need to add the value of each element to the corresponding position in the matrix to its right and below. Since the elements are 2 and 5, the value at position (4, 6) becomes 0 + 2 = 2, and the value at position (4, 7) becomes 0 + 5 = 5.
+
+Test Case:
+Input:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 5, 0, 0, 0, 0, 0], [0, 0, 0, 2, 0, 0, 0, 0, 0], [0, 0, 0, 2, 0, 0, 0, 0, 0], [0, 0, 0, 2, 0, 0, 0, 0, 0]]
+
+Output:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 5, 0, 0, 0, 0, 0], [0, 0, 0, 3, 0, 0, 0, 0, 0], [0, 0, 0, 3, 0, 0, 0, 0, 0], [0, 0, 0, 3, 0, 0, 0, 0, 0]]
+
+Explanation:
+In this case, we have a matrix with several non-zero elements. We need to add the value of each element to the corresponding position in the matrix to its right and below. Since the elements are 2, 2, and 5, the value at position (4, 6) becomes 0 + 2 = 2, the value at position (4, 7) becomes 0 + 2 = 2, and the value at position (5, 7) becomes 0 + 5 = 5.
+
+In all cases, the output matrices have the same dimensions as the input matrices, and the non-zero elements in the input matrices have been correctly propagated according to the rules of
