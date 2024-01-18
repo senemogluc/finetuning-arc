@@ -50,7 +50,6 @@ def json_task_visualization(task_path):
     data_name = task_path.split("/")[-3]
     category = task_path.split("/")[-2]
     task_name = task_path.split("/")[-1].split(".")[0]
-    print(category, task_name)
 
     if not os.path.exists(f"images/{data_name}/{category}"):
         os.makedirs(f"images/{data_name}/{category}")
