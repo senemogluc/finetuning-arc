@@ -16,7 +16,8 @@ def task_to_prompt(task_json):
     test_input = "[" + ", ".join([f"{str(row)}" for row in parsed_json['test'][0]['input']]) + "]"
     test_output = "[" + ", ".join([f"{str(row)}" for row in parsed_json['test'][0]['output']]) + "]"
 
-    prompt = ""
+    with open("prompt-template.txt", mode='r') as f:
+        prompt = f.read()
 
     for i in range(len(inputs)):
         prompt += "Case " + str(i) + ":\nInput:\n" + inputs[i]
@@ -55,10 +56,10 @@ def json_task_visualization(task_path):
         os.makedirs(f"images/{data_name}/{category}")
     
     task = Task(id=task_name, train=data['train'], test=data['test'])
-    drawed_task = vis.draw_task(task, height=24, width=60)  
+    drawed_task = vis.draw_task(task, height=24, width=60, include_test=True)  
     vis.output_drawing(drawed_task, f"images/{data_name}/{category}/{task_name}.png") 
             
 if __name__ == "__main__":
     # print(task_to_prompt("data/training/0a938d79.json")[0])
-    multiple_tasks_to_prompt("data/evaluation", "fine_tune_data/arc_aug_eval.json")
-    #json_task_visualization('data/ConceptARC/AboveBelow/AboveBelow9.json')
+    # multiple_tasks_to_prompt("data/evaluation", "fine_tune_data/arc_aug_eval.json")
+    json_task_visualization('data/ConceptARC/AboveBelow/AboveBelow9.json')
