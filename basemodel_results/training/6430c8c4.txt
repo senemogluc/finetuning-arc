@@ -1,0 +1,148 @@
+GPT4 Correct User: Case 0:
+Input:
+[[7, 7, 0, 7], [0, 7, 7, 0], [0, 7, 7, 7], [0, 7, 7, 0], [4, 4, 4, 4], [0, 0, 0, 0], [0, 2, 0, 2], [2, 2, 2, 0], [2, 0, 0, 2]]
+
+Output:
+[[0, 0, 3, 0], [3, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+
+Case 1:
+Input:
+[[0, 0, 7, 7], [0, 0, 7, 7], [0, 7, 7, 0], [7, 7, 0, 0], [4, 4, 4, 4], [2, 0, 2, 0], [0, 2, 0, 2], [0, 2, 2, 0], [0, 0, 2, 0]]
+
+Output:
+[[0, 3, 0, 0], [3, 0, 0, 0], [3, 0, 0, 3], [0, 0, 0, 3]]
+
+Case 2:
+Input:
+[[0, 0, 0, 7], [0, 7, 7, 7], [0, 7, 0, 0], [0, 7, 7, 7], [4, 4, 4, 4], [0, 0, 2, 0], [0, 2, 2, 2], [2, 2, 0, 0], [0, 2, 0, 2]]
+
+Output:
+[[3, 3, 0, 0], [3, 0, 0, 0], [0, 0, 3, 3], [3, 0, 0, 0]]
+
+Case 3:
+Input:
+[[7, 0, 7, 0], [0, 0, 7, 7], [7, 0, 7, 7], [7, 7, 0, 0], [4, 4, 4, 4], [0, 0, 2, 2], [0, 0, 0, 0], [2, 0, 0, 2], [0, 2, 0, 2]]
+
+Output:
+[[0, 3, 0, 0], [3, 3, 0, 0], [0, 3, 0, 0], [0, 0, 3, 0]]
+
+Test Case:
+Input:
+[[7, 7, 7, 7], [0, 7, 7, 7], [7, 0, 0, 0], [7, 0, 7, 0], [4, 4, 4, 4], [0, 2, 2, 2], [0, 0, 0, 0], [2, 0, 2, 2], [0, 2, 0, 0]]
+
+Output: GPT4 Correct Assistant: Here are the detailed explanations of the solutions for the provided cases:
+
+Case 0:
+In this case, we have the input matrix:
+
+```
+[[7, 7, 0, 7], [0, 7, 7, 0], [0, 7, 7, 7], [0, 7, 7, 0], [4, 4, 4, 4], [0, 0, 0, 0], [0, 2, 0, 2], [2, 2, 2, 0], [2, 0, 0, 2]]
+```
+
+We can observe that the first and fourth rows have all zeros in the first and fourth columns. So, we can replace those rows with zeros in the output matrix:
+
+```
+[[0, 0, 3, 0], [3, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+```
+
+Case 1:
+In this case, the input matrix is:
+
+```
+[[0, 0, 7, 7], [0, 0, 7, 7], [0, 7, 7, 0], [7, 7, 0, 0], [4, 4, 4, 4], [2, 0, 2, 0], [0, 2, 0, 2], [0, 2, 2, 0], [0, 0, 2, 0]]
+```
+
+Here, the second and third rows have all zeros in the first and third columns. So, we can replace those rows with zeros in the output matrix:
+
+```
+[[0, 3, 0, 0], [3, 0, 0, 0], [3, 0, 0, 3], [0, 0, 0, 3]]
+```
+
+Case 2:
+In this case, the input matrix is:
+
+```
+[[0, 0, 0, 7], [0, 7, 7, 7], [0, 7, 0, 0], [0, 7, 7, 7], [4, 4, 4, 4], [0, 0, 2, 0], [0, 2, 2, 2], [2, 2, 0, 0], [0, 2, 0, 2]]
+```
+
+Here, the first and fourth rows have all zeros in the second and third columns. So, we can replace those rows with zeros in the output matrix:
+
+```
+[[3, 3, 0, 0], [3, 0, 0, 0], [0, 0, 3, 3], [3, 0, 0, 0]]
+```
+
+Case 3:
+In this case, the input matrix is:
+
+```
+[[7, 0, 7, 0], [0, 0, 7, 7], [7, 0, 7, 7], [7, 7, 0, 0], [4, 4, 4, 4], [0, 2, 2, 2], [0, 0, 0, 0], [2, 0, 2, 2], [0, 2, 0, 2]]
+```
+
+Here, the first and third rows have all zeros in the second and fourth columns. So, we can replace those rows with zeros in the output matrix:
+
+```
+[[0, 3, 0, 0], [3, 3, 0, 0], [0, 3, 0, 0], [0, 0, 3, 0]]
+```
+
+Test Case:
+In this case, the input matrix is:
+
+```
+[[7, 7, 7, 7], [0, 7, 7, 7], [7, 0, 0, 0], [7, 0, 7, 0], [4, 4, 4, 4], [0, 2, 2, 2], [0, 0, 0, 0], [2, 0, 2, 2], [0, 2, 0, 0]]
+```
+
+Here, all the rows have all zeros in the second and fourth columns. So, we can replace the entire matrix with zeros in the output matrix:
+
+```
+[[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+```
+
+In summary, the detailed explanations of the solutions for the provided cases are as follows:
+
+- Case 0: Replace the first and fourth rows with zeros.
+- Case 1: Replace the second and third rows with zeros.
+- Case 2: Replace the first and fourth rows with zeros.
+- Case 3: Replace the first and third rows with zeros.
+- Test Case: Replace the entire matrix with zeros.
+
+Here are the detailed explanations of the solutions for the provided cases:
+
+- Case 0: In this case, the input matrix is:
+
+```
+[[7, 7, 0, 7], [0, 7, 7, 0], [0, 7, 7, 7], [0, 7, 7, 0], [4, 4, 4, 4], [0, 0, 0, 0], [0, 2, 0, 2], [2, 2, 2, 0], [2, 0, 0, 2]]
+```
+
+We can observe that the first and fourth rows have all zeros in the first and fourth columns. So, we can replace those rows with zeros in the output matrix:
+
+```
+[[0, 0, 3, 0], [3, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+```
+
+- Case 1: In this case, the input matrix is:
+
+```
+[[0, 0, 7, 7], [0, 0, 7, 7], [0, 7, 7, 0], [7, 7, 0, 0], [4, 4, 4, 4], [2, 0, 2, 0], [0, 2, 0, 2], [0, 2, 2, 0], [0, 0, 2, 0]]
+
+```Here, the second and third rows have all zeros in the first and third columns. So, we can replace those rows with zeros in the output matrix:
+
+```
+[[0, 3, 0, 0], [3, 0, 0, 0], [3, 0, 0, 3], [0, 0, 0, 3]]
+```
+
+- Case 2: In this case, the input matrix is:
+
+```
+[[0, 0, 0, 7], [0, 7, 7, 7], [0, 7, 0, 0], [0, 7, 7, 7], [4, 4, 4, 4], [0, 2, 2, 2], [0, 0, 0, 0], [2, 0, 2, 2], [0, 2, 0, 2]]
+```
+
+Here, the first and fourth rows have all zeros in the second and third columns. So, we can replace those rows with zeros in the output matrix:
+
+```
+[[3, 3, 0, 0], [3, 0, 0, 0], [0, 0, 3, 3], [3, 0, 0, 0]]
+```
+
+- Case 3: In this case, the input matrix is:
+
+```
+[[7, 0, 7, 0], [0, 0, 7, 7], [7, 0, 7, 7], [7, 7, 0, 0],

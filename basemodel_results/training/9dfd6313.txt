@@ -1,0 +1,51 @@
+GPT4 Correct User: Case 0:
+Input:
+[[5, 0, 0], [3, 5, 0], [0, 0, 5]]
+
+Output:
+[[5, 3, 0], [0, 5, 0], [0, 0, 5]]
+
+Case 1:
+Input:
+[[5, 0, 0, 0], [0, 5, 0, 0], [6, 0, 5, 0], [6, 0, 4, 5]]
+
+Output:
+[[5, 0, 6, 6], [0, 5, 0, 0], [0, 0, 5, 4], [0, 0, 0, 5]]
+
+Case 2:
+Input:
+[[5, 0, 0, 0, 0], [0, 5, 0, 0, 0], [8, 8, 5, 0, 0], [0, 2, 0, 5, 0], [0, 2, 0, 1, 5]]
+
+Output:
+[[5, 0, 8, 0, 0], [0, 5, 8, 2, 2], [0, 0, 5, 0, 0], [0, 0, 0, 5, 1], [0, 0, 0, 0, 5]]
+
+Test Case:
+Input:
+[[5, 0, 0, 0, 0, 0], [0, 5, 0, 0, 0, 0], [3, 3, 5, 0, 0, 0], [0, 0, 0, 5, 0, 0], [2, 0, 8, 8, 5, 0], [2, 0, 6, 0, 0, 5]]
+
+Output: GPT4 Correct Assistant: Here are the steps to solve the problem:
+
+1. Initialize an empty matrix of the same size as the input matrix, with all elements set to 0.
+2. For each row in the input matrix, find the maximum element in that row.
+3. Replace the row in the output matrix with the row from the input matrix, but replace the maximum element with 0.
+4. Replace the maximum element in the output matrix with the maximum element found in step 2.
+5. Repeat steps 2-4 for each row in the input matrix.
+6. Return the output matrix.
+
+Now, let's apply these steps to the test case:
+
+Input: [[5, 0, 0, 0, 0, 0], [0, 5, 0, 0, 0, 0], [3, 3, 5, 0, 0, 0], [0, 0, 0, 5, 0, 0], [2, 0, 8, 8, 5, 0], [2, 0, 6, 0, 0, 5]]
+
+Step 1: Initialize an empty matrix of the same size as the input matrix, with all elements set to 0. The output matrix will be a 6x6 matrix with all elements set to 0.
+
+Step 2-4: For each row in the input matrix:
+- For the first row, the maximum element is 5. Replace the first row in the output matrix with the first row from the input matrix, but replace the 5 with 0. Replace the maximum element in the output matrix with 5. The first row of the output matrix is now [5, 0, 0, 0, 0, 0].
+- For the second row, the maximum element is 5. Replace the second row in the output matrix with the second row from the input matrix, but replace the 5 with 0. Replace the maximum element in the output matrix with 5. The second row of the output matrix is now [0, 5, 0, 0, 0, 0].
+- For the third row, the maximum element is 5. Replace the third row in the output matrix with the third row from the input matrix, but replace the 5 with 0. Replace the maximum element in the output matrix with 5. The third row of the output matrix is now [3, 3, 0, 0, 0, 0].
+- For the fourth row, the maximum element is 5. Replace the fourth row in the output matrix with the fourth row from the input matrix, but replace the 5 with 0. Replace the maximum element in the output matrix with 5. The fourth row of the output matrix is now [0, 0, 0, 5, 0, 0].
+- For the fifth row, the maximum element is 8. Replace the fifth row in the output matrix with the fifth row from the input matrix, but replace the 8 with 0. Replace the maximum element in the output matrix with 8. The fifth row of the output matrix is now [2, 0, 8, 0, 0, 0].
+- For the sixth row, the maximum element is 6. Replace the sixth row in the output matrix with the sixth row from the input matrix, but replace the 6 with 0. Replace the maximum element in the output matrix with 6. The sixth row of the output matrix is now [2, 0, 6, 0, 0, 5].
+
+Step 5: Return the output matrix.
+
+Output: [[5, 0, 0, 0, 0, 0], [0, 5, 0, 0, 0, 0], [3, 3, 0, 0, 0, 0], [0, 0, 0, 5, 0, 0], [2, 0, 8, 0, 0, 0], [2, 0, 6, 0, 0, 5]]

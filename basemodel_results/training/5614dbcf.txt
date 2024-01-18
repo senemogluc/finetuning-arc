@@ -1,0 +1,28 @@
+GPT4 Correct User: Case 0:
+Input:
+[[3, 3, 3, 0, 0, 0, 8, 8, 8], [3, 3, 3, 0, 0, 0, 8, 5, 8], [3, 3, 3, 0, 0, 0, 8, 8, 8], [0, 0, 0, 7, 5, 7, 0, 0, 0], [0, 0, 0, 7, 7, 7, 0, 0, 0], [0, 0, 0, 7, 7, 7, 0, 0, 0], [6, 6, 6, 0, 0, 5, 9, 9, 9], [6, 6, 6, 0, 0, 0, 9, 9, 9], [6, 5, 6, 0, 5, 0, 9, 9, 5]]
+
+Output:
+[[3, 0, 8], [0, 7, 0], [6, 0, 9]]
+
+Case 1:
+Input:
+[[0, 0, 0, 2, 2, 2, 0, 0, 0], [0, 5, 0, 2, 2, 2, 0, 0, 0], [0, 0, 0, 2, 2, 2, 0, 0, 0], [5, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 5, 0, 0, 0, 5, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 5, 0, 7, 7, 7, 0, 0, 0], [0, 0, 0, 7, 7, 5, 0, 0, 0], [0, 0, 0, 7, 7, 7, 0, 0, 0]]
+
+Output:
+[[0, 2, 0], [0, 0, 0], [0, 7, 0]]
+
+Test Case:
+Input:
+[[4, 4, 4, 0, 0, 0, 0, 5, 0], [5, 4, 4, 0, 0, 0, 0, 0, 0], [4, 4, 4, 0, 5, 0, 0, 0, 0], [0, 0, 0, 3, 3, 3, 0, 5, 0], [0, 0, 0, 3, 3, 3, 0, 0, 0], [0, 0, 0, 3, 3, 3, 0, 0, 0], [0, 0, 5, 9, 9, 9, 0, 0, 0], [0, 0, 0, 9, 5, 9, 0, 0, 0], [0, 0, 0, 9, 9, 9, 0, 0, 0]]
+
+Output: GPT4 Correct Assistant: [[4, 0, 0], [0, 0, 0], [0, 5, 0]]
+
+Explanation: 
+In the given input, we have a 2D matrix. We need to find the rows in the matrix where the sum of the first two elements is non-zero and the corresponding column in the output matrix should have the maximum value from the third element of that row. 
+
+For the first case, the sum of the first two elements in the first, third, and sixth rows are non-zero. The maximum value from the third element in these rows are 8, 9, and 5 respectively. So, the output matrix will be [[3, 0, 8], [0, 7, 0], [6, 0, 9]].
+
+For the second case, the sum of the first two elements in the second, fifth, and eighth rows are non-zero. The maximum value from the third element in these rows are 2, 7, and 9 respectively. So, the output matrix will be [[0, 2, 0], [0, 0, 0], [0, 7, 0]].
+
+For the third case, the sum of the first two elements in the first, third, and fourth rows are non-zero. The maximum value from the third element in these rows are 4, 5, and 5 respectively. So, the output matrix will be [[4, 0, 0], [0, 0, 0], [0, 5, 0]].

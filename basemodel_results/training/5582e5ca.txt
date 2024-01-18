@@ -1,0 +1,34 @@
+GPT4 Correct User: Case 0:
+Input:
+[[4, 4, 8], [6, 4, 3], [6, 3, 0]]
+
+Output:
+[[4, 4, 4], [4, 4, 4], [4, 4, 4]]
+
+Case 1:
+Input:
+[[6, 8, 9], [1, 8, 1], [9, 4, 9]]
+
+Output:
+[[9, 9, 9], [9, 9, 9], [9, 9, 9]]
+
+Case 2:
+Input:
+[[4, 6, 9], [6, 4, 1], [8, 8, 6]]
+
+Output:
+[[6, 6, 6], [6, 6, 6], [6, 6, 6]]
+
+Test Case:
+Input:
+[[8, 8, 6], [4, 6, 9], [8, 3, 0]]
+
+Output: GPT4 Correct Assistant: [[6, 6, 6], [6, 6, 6], [6, 6, 6]]
+
+Explanation: 
+In all the given cases, the input is a 3x3 matrix. In each case, the maximum value in each row is the same, and the output is a new 3x3 matrix where each element is the maximum value in its corresponding row of the input matrix. 
+
+For case 0, the maximum value in each row is 4, so the output is a matrix with all elements equal to 4. 
+For case 1, the maximum value in each row is 9, so the output is a matrix with all elements equal to 9. 
+For case 2, the maximum value in each row is 6, so the output is a matrix with all elements equal to 6. 
+For the test case, the maximum value in each row is 6, so the output is a matrix with all elements equal to 6.

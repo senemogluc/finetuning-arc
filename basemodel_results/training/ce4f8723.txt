@@ -1,0 +1,43 @@
+GPT4 Correct User: Case 0:
+Input:
+[[1, 1, 0, 0], [0, 1, 0, 1], [0, 1, 0, 0], [1, 0, 1, 0], [4, 4, 4, 4], [2, 2, 2, 2], [0, 0, 2, 2], [2, 2, 0, 0], [0, 0, 2, 2]]
+
+Output:
+[[3, 3, 3, 3], [0, 3, 3, 3], [3, 3, 0, 0], [3, 0, 3, 3]]
+
+Case 1:
+Input:
+[[1, 1, 1, 0], [0, 1, 0, 1], [0, 0, 1, 1], [1, 1, 0, 1], [4, 4, 4, 4], [0, 0, 0, 2], [0, 0, 0, 2], [2, 2, 2, 2], [2, 2, 0, 2]]
+
+Output:
+[[3, 3, 3, 3], [0, 3, 0, 3], [3, 3, 3, 3], [3, 3, 0, 3]]
+
+Case 2:
+Input:
+[[1, 1, 0, 0], [1, 0, 1, 0], [1, 1, 0, 1], [1, 1, 1, 1], [4, 4, 4, 4], [2, 2, 0, 2], [0, 0, 2, 0], [0, 2, 0, 0], [2, 0, 2, 0]]
+
+Output:
+[[3, 3, 0, 3], [3, 0, 3, 0], [3, 3, 0, 3], [3, 3, 3, 3]]
+
+Case 3:
+Input:
+[[1, 0, 1, 0], [1, 1, 0, 1], [1, 0, 1, 1], [0, 1, 0, 1], [4, 4, 4, 4], [2, 2, 0, 0], [0, 0, 2, 0], [2, 2, 0, 0], [0, 0, 2, 0]]
+
+Output:
+[[3, 3, 3, 0], [3, 3, 3, 3], [3, 3, 3, 3], [0, 3, 3, 3]]
+
+Test Case:
+Input:
+[[1, 0, 1, 0], [1, 0, 1, 0], [0, 1, 0, 0], [1, 0, 1, 0], [4, 4, 4, 4], [2, 2, 0, 0], [0, 0, 2, 0], [0, 2, 0, 2], [2, 2, 2, 0]]
+
+Output: GPT4 Correct Assistant: Here are the detailed steps to solve the test case:
+
+1. Initialize an empty matrix with the same dimensions as the input matrix.
+2. Iterate through each row of the input matrix:
+   a. For each row, find the maximum value in that row.
+   b. Replace the maximum value in the row with 0.
+   c. Add 1 to the value in the same position in the output matrix.
+3. After iterating through all rows, the output matrix will have the desired result.
+
+For the test case provided, the output will be:
+[[3, 1, 1, 0], [1, 1, 1, 0], [1, 1, 0, 0], [1, 1, 1, 0]]

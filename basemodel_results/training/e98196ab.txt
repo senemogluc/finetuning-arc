@@ -1,0 +1,37 @@
+GPT4 Correct User: Case 0:
+Input:
+[[0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 8, 0, 0, 0, 8, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 8, 0, 0, 0, 0, 0, 0, 0, 8, 0], [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0], [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]]
+
+Output:
+[[0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0], [0, 0, 0, 8, 0, 0, 0, 8, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0], [1, 8, 0, 0, 0, 0, 0, 0, 0, 8, 1]]
+
+Case 1:
+Input:
+[[0, 3, 0, 0, 0, 3, 0, 0, 0, 3, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 3, 0, 0, 0, 0, 3, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0], [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7], [7, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0], [0, 0, 7, 0, 7, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [7, 0, 0, 0, 0, 0, 7, 0, 0, 0, 7]]
+
+Output:
+[[0, 3, 0, 0, 0, 3, 0, 0, 0, 3, 7], [7, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0], [0, 0, 7, 3, 7, 0, 0, 0, 3, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [7, 3, 0, 0, 0, 0, 7, 0, 0, 0, 7]]
+
+Case 2:
+Input:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1], [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5], [2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0]]
+
+Output:
+[[2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2], [0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0], [2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 1]]
+
+Test Case:
+Input:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7], [0, 0, 7, 7, 0, 0, 0, 0, 7, 0, 0], [0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0], [0, 7, 0, 7, 0, 0, 0, 0, 0, 0, 7], [0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0], [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5], [6, 0, 0, 0, 6, 0, 6, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6], [6, 0, 0, 0, 6, 0, 0, 0, 0, 0, 6], [0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0], [6, 0, 0, 6, 0, 0, 0, 0, 0, 0, 0]]
+
+Output: GPT4 Correct Assistant: [[2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2], [0, 1, 0, 1, 1, 0, 1, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0], [0, 0, 1, 0, 1, 0, 0, 1, 0, 0, 0], [2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 1]]
+
+Explanation:
+In each case, the input is a 2D matrix with specific values. The output is the modified matrix after applying certain conditions. 
+
+In Case 0, the input matrix has 0s and 8s in specific positions. The output matrix replaces the 8s with 1s and the 0s with 0s, resulting in a matrix with 1s and 0s in the same positions as the original 8s and 0s. 
+
+In Case 1, the input matrix has 3s and 0s in specific positions. The output matrix replaces the 3s with 7s and the 0s with 0s, resulting in a matrix with 7s and 0s in the same positions as the original 3s and 0s. 
+
+In Case 2, the input matrix has 0s and specific values in specific positions. The output matrix replaces the 0s with 0s and the specific values with 2s, resulting in a matrix with 2s and 0s in the same positions as the original 0s and specific values.
+
+In the Test Case, the input matrix has 0s, 7s, and 6s in specific positions. The output matrix replaces the 7s with 1s and the 6s with 0s, resulting in a matrix with 1s and 0s in the same positions as the original 7s and 6s.

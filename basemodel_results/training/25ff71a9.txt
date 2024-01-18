@@ -1,0 +1,83 @@
+GPT4 Correct User: Case 0:
+Input:
+[[1, 1, 1], [0, 0, 0], [0, 0, 0]]
+
+Output:
+[[0, 0, 0], [1, 1, 1], [0, 0, 0]]
+
+Case 1:
+Input:
+[[0, 0, 0], [1, 1, 1], [0, 0, 0]]
+
+Output:
+[[0, 0, 0], [0, 0, 0], [1, 1, 1]]
+
+Case 2:
+Input:
+[[0, 1, 0], [1, 1, 0], [0, 0, 0]]
+
+Output:
+[[0, 0, 0], [0, 1, 0], [1, 1, 0]]
+
+Case 3:
+Input:
+[[0, 2, 2], [0, 0, 2], [0, 0, 0]]
+
+Output:
+[[0, 0, 0], [0, 2, 2], [0, 0, 2]]
+
+Test Case:
+Input:
+[[2, 0, 0], [2, 0, 0], [0, 0, 0]]
+
+Output: GPT4 Correct Assistant: Here are the details for each case:
+
+Case 0: 
+Input: [[1, 1, 1], [0, 0, 0], [0, 0, 0]]
+To get the output, we need to find the minimum value in each row and replace all other values in that row with 0. 
+
+For the first row, the minimum value is 1, so all other values in the first row are replaced with 0. 
+For the second row, the minimum value is 0, so all values in the second row are already 0. 
+For the third row, the minimum value is 0, so all values in the third row are already 0. 
+
+Output: [[0, 0, 0], [1, 1, 1], [0, 0, 0]]
+
+Case 1: 
+Input: [[0, 0, 0], [1, 1, 1], [0, 0, 0]]
+Similar to the previous case, we find the minimum value in each row and replace all other values in that row with 0. 
+
+For the first row, the minimum value is 0, so all values in the first row are already 0. 
+For the second row, the minimum value is 1, so all other values in the second row are replaced with 0. 
+For the third row, the minimum value is 0, so all values in the third row are already 0. 
+
+Output: [[0, 0, 0], [0, 0, 0], [1, 1, 1]]
+
+Case 2: 
+Input: [[0, 1, 0], [1, 1, 0], [0, 0, 0]]
+Again, we find the minimum value in each row and replace all other values in that row with 0. 
+
+For the first row, the minimum value is 0, so all values in the first row are already 0. 
+For the second row, the minimum value is 1, so all other values in the second row are replaced with 0. 
+For the third row, the minimum value is 0, so all values in the third row are already 0. 
+
+Output: [[0, 0, 0], [0, 1, 0], [1, 1, 0]]
+
+Case 3: 
+Input: [[0, 2, 2], [0, 0, 2], [0, 0, 0]]
+Here, we find the minimum value in each row and replace all other values in that row with 0. 
+
+For the first row, the minimum value is 2, so all other values in the first row are replaced with 0. 
+For the second row, the minimum value is 0, so all values in the second row are already 0. 
+For the third row, the minimum value is 0, so all values in the third row are already 0. 
+
+Output: [[0, 0, 0], [0, 0, 2], [0, 0, 0]]
+
+Test Case: 
+Input: [[2, 0, 0], [2, 0, 0], [0, 0, 0]]
+For this test case, we find the minimum value in each row and replace all other values in that row with 0. 
+
+For the first row, the minimum value is 2, so all other values in the first row are replaced with 0. 
+For the second row, the minimum value is 2, so all other values in the second row are replaced with 0. 
+For the third row, the minimum value is 0, so all values in the third row are already 0. 
+
+Output: [[0, 0, 0], [0, 0, 0], [0, 0, 0]]

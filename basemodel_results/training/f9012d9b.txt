@@ -1,0 +1,46 @@
+GPT4 Correct User: Case 0:
+Input:
+[[2, 1, 2, 1, 2], [1, 1, 1, 1, 1], [2, 1, 2, 1, 2], [0, 0, 1, 1, 1], [0, 0, 2, 1, 2]]
+
+Output:
+[[1, 1], [2, 1]]
+
+Case 1:
+Input:
+[[8, 6, 0, 6], [6, 8, 6, 8], [8, 6, 8, 6], [6, 8, 6, 8]]
+
+Output:
+[[8]]
+
+Case 2:
+Input:
+[[2, 2, 5, 2, 2, 5, 2], [2, 2, 5, 2, 2, 5, 2], [5, 5, 5, 5, 5, 5, 5], [2, 2, 5, 2, 2, 5, 2], [2, 2, 5, 2, 2, 5, 2], [5, 5, 5, 5, 5, 0, 0], [2, 2, 5, 2, 2, 0, 0]]
+
+Output:
+[[5, 5], [5, 2]]
+
+Test Case:
+Input:
+[[8, 1, 8, 8, 0, 0, 0], [1, 8, 8, 1, 0, 0, 0], [8, 8, 1, 8, 0, 0, 0], [8, 1, 8, 8, 1, 8, 8], [1, 8, 8, 1, 8, 8, 1], [8, 8, 1, 8, 8, 1, 8], [8, 1, 8, 8, 1, 8, 8]]
+
+Output: GPT4 Correct Assistant: Here are the detailed steps to solve each case:
+
+Case 0:
+- Input: [[2, 1, 2, 1, 2], [1, 1, 1, 1, 1], [2, 1, 2, 1, 2], [0, 0, 1, 1, 1], [0, 0, 2, 1, 2]]
+- To solve this case, we can start by initializing an empty result list. Then, we can iterate through the input list and check if each number is greater than 0. If it is, we add it to the result list. After that, we can group the numbers in the result list based on their value and return the result.
+- Output: [[1, 1], [2, 1]]
+
+Case 1:
+- Input: [[8, 6, 0, 6], [6, 8, 6, 8], [8, 6, 8, 6], [6, 8, 6, 8]]
+- To solve this case, we can follow the same approach as in Case 0. We initialize an empty result list and iterate through the input list. If a number is greater than 0, we add it to the result list. After that, we can group the numbers in the result list based on their value and return the result.
+- Output: [[8]]
+
+Case 2:
+- Input: [[2, 2, 5, 2, 2, 5, 2], [2, 2, 5, 2, 2, 5, 2], [5, 5, 5, 5, 5, 5, 5], [2, 2, 5, 2, 2, 5, 2], [2, 2, 5, 2, 2, 5, 2], [5, 5, 5, 5, 5, 0, 0], [2, 2, 5, 2, 2, 0, 0]]
+- To solve this case, we can follow the same approach as in Case 0 and Case 1. We initialize an empty result list and iterate through the input list. If a number is greater than 0, we add it to the result list. After that, we can group the numbers in the result list based on their value and return the result.
+- Output: [[5, 5], [5, 2]]
+
+Test Case:
+- Input: [[8, 1, 8, 8, 0, 0, 0], [1, 8, 8, 1, 0, 0, 0], [8, 8, 1, 8, 0, 0, 0], [8, 1, 8, 8, 1, 8, 8], [1, 8, 8, 1, 8, 8, 1], [8, 8, 1, 8, 8, 1, 8], [8, 1, 8, 8, 1, 8, 8]]
+- To solve this case, we can follow the same approach as in Case 0, Case 1, and Case 2. We initialize an empty result list and iterate through the input list. If a number is greater than 0, we add it to the result list. After that, we can group the numbers in the result list based on their value and return the result.
+- Output: [[8, 1, 8, 8, 1, 8, 8], [1, 8, 1, 8, 8, 1, 8], [8, 8, 1, 8, 8, 1, 8]]

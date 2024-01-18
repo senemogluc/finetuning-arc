@@ -1,0 +1,40 @@
+GPT4 Correct User: Case 0:
+Input:
+[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 5, 0, 0], [5, 5, 5, 5, 5]]
+
+Output:
+[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 5, 0, 0], [5, 5, 1, 5, 5]]
+
+Case 1:
+Input:
+[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 1, 0, 1, 0], [0, 5, 0, 5, 0], [5, 5, 5, 5, 5]]
+
+Output:
+[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 5, 0, 5, 0], [5, 1, 5, 1, 5]]
+
+Case 2:
+Input:
+[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 1, 0, 0, 1], [0, 5, 0, 0, 5], [5, 5, 5, 5, 5]]
+
+Output:
+[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 5, 0, 0, 5], [5, 1, 5, 5, 1]]
+
+Test Case:
+Input:
+[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 1, 0, 1], [0, 0, 5, 0, 5], [5, 5, 5, 5, 5]]
+
+Output: GPT4 Correct Assistant: Here are the detailed explanations for each case:
+
+Case 0:
+In the input matrix, the values in the first and second rows are all zeros. So, the output matrix will be the same as the input matrix. The third row has a value of 1 in the fourth column, and the fourth row has a value of 5 in the fourth column. The fifth row has all the values equal to 5. Therefore, the output matrix will have the value 1 in the fourth column of the third row, and the value 5 in the fourth column of the fourth and fifth rows.
+
+Case 1:
+In the input matrix, the values in the first and second rows are all zeros. The third row has a value of 1 in the fourth column, and the fourth row has a value of 5 in the fourth column. The fifth row has all the values equal to 5. Therefore, the output matrix will have the value 1 in the fourth column of the third row, and the value 5 in the fourth column of the fourth and fifth rows. However, in the third row, the value 1 in the first column will be replaced by a zero, and the value 1 in the fourth column will be replaced by a zero.
+
+Case 2:
+In the input matrix, the values in the first and second rows are all zeros. So, the output matrix will be the same as the input matrix. The third row has a value of 1 in the fourth column, and the fourth row has a value of 5 in the fourth column. The fifth row has all the values equal to 5. Therefore, the output matrix will have the value 1 in the fourth column of the third row, and the value 5 in the fourth column of the fourth and fifth rows. However, in the third row, the value 1 in the first column will be replaced by a zero, and the value 1 in the fourth column will be replaced by a zero.
+
+Test Case:
+In the input matrix, the values in the first and second rows are all zeros. So, the output matrix will be the same as the input matrix. The third row has a value of 1 in the fourth column, and the fourth row has a value of 5 in the fourth column. The fifth row has all the values equal to 5. Therefore, the output matrix will have the value 1 in the fourth column of the third row, and the value 5 in the fourth column of the fourth and fifth rows. However, in the third row, the value 1 in the first column will be replaced by a zero, and the value 1 in the fourth column will be replaced by a zero.
+
+In all cases, the output matrix will have the same structure as the input matrix, but with some values replaced by zeros.

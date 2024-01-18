@@ -1,0 +1,54 @@
+GPT4 Correct User: Case 0:
+Input:
+[[5, 5, 0], [5, 0, 5], [0, 5, 0]]
+
+Output:
+[[1]]
+
+Case 1:
+Input:
+[[8, 0, 8], [0, 8, 0], [8, 0, 8]]
+
+Output:
+[[2]]
+
+Case 2:
+Input:
+[[5, 0, 5], [0, 5, 0], [5, 0, 5]]
+
+Output:
+[[2]]
+
+Case 3:
+Input:
+[[0, 1, 1], [0, 1, 1], [1, 0, 0]]
+
+Output:
+[[3]]
+
+Case 4:
+Input:
+[[0, 8, 8], [0, 8, 8], [8, 0, 0]]
+
+Output:
+[[3]]
+
+Case 5:
+Input:
+[[4, 4, 0], [4, 0, 4], [0, 4, 0]]
+
+Output:
+[[1]]
+
+Case 6:
+Input:
+[[0, 5, 0], [5, 5, 5], [0, 5, 0]]
+
+Output:
+[[6]]
+
+Test Case:
+Input:
+[[0, 8, 0], [8, 8, 8], [0, 8, 0]]
+
+Output: GPT4 Correct Assistant: [[4]]

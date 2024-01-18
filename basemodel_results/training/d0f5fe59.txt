@@ -1,0 +1,40 @@
+GPT4 Correct User: Case 0:
+Input:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 8, 8, 0, 0, 0, 0, 0, 0], [0, 0, 8, 8, 0, 0, 0, 0, 0, 0], [0, 8, 8, 8, 0, 0, 0, 0, 0, 0], [0, 0, 8, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 8, 8, 0, 0, 0], [0, 0, 0, 0, 8, 8, 8, 0, 0, 0], [0, 0, 0, 0, 0, 0, 8, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 8, 8, 0, 0, 0, 0, 0], [0, 8, 8, 8, 0, 0, 0, 0, 0, 0], [0, 0, 0, 8, 0, 0, 0, 8, 8, 0], [0, 0, 0, 0, 0, 0, 0, 8, 8, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+
+Output:
+[[8, 0, 0, 0], [0, 8, 0, 0], [0, 0, 8, 0], [0, 0, 0, 8]]
+
+Case 1:
+Input:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0], [0, 8, 8, 8, 0, 0, 0, 0, 0, 0, 0, 0], [0, 8, 8, 0, 0, 0, 0, 8, 0, 0, 0, 0], [0, 0, 0, 0, 0, 8, 8, 8, 8, 0, 0, 0], [0, 0, 0, 0, 0, 8, 0, 8, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 8, 8, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 8, 8, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+
+Output:
+[[8, 0, 0], [0, 8, 0], [0, 0, 8]]
+
+Case 2:
+Input:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 8, 8, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 8, 8, 8, 0, 0, 0, 8, 0, 0, 0], [0, 0, 0, 8, 8, 0, 0, 0, 8, 8, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+
+Output:
+[[8, 0], [0, 8]]
+
+Test Case:
+Input:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0], [0, 0, 0, 0, 0, 8, 0, 0, 8, 8, 0, 0], [0, 0, 0, 8, 8, 8, 0, 0, 8, 8, 0, 0], [0, 0, 0, 0, 8, 8, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 8, 8, 0, 0, 0, 0, 0, 8, 8, 0, 0], [0, 0, 8, 8, 0, 0, 0, 0, 8, 8, 8, 0], [0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 8, 8, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+
+Output: GPT4 Correct Assistant: [[8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 8, 0, 0, 0, 0, 0, 0, 8, 0, 0], [0, 0, 8, 8, 0, 0, 0, 0, 8, 8, 0, 0], [0, 0, 0, 8, 8, 0, 0, 0, 8, 8, 0, 0], [0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 8, 8, 0, 0, 0, 0, 0, 8, 8, 0, 0], [0, 0, 8, 8, 0, 0, 0, 0, 8, 8, 8, 0], [0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+
+Explanation:
+The given input is a 2D array of integers. The goal is to find a condensed version of the input array, where all the zeros are removed and the non-zero elements are grouped together. 
+
+For each input array, the condensed version is obtained by:
+1. Removing all zeros from each row.
+2. Removing all rows that are completely composed of zeros.
+3. Merging adjacent non-zero elements in the same row, if possible.
+
+For example, in the first test case, the condensed version is obtained by removing all zeros from each row and merging adjacent non-zero elements. The resulting array is [[8, 0, 0], [0, 8, 0], [0, 0, 8]].
+
+In the second test case, the condensed version is obtained by removing all zeros from each row and merging adjacent non-zero elements. The resulting array is [[8, 0], [0, 8]].
+
+In the third test case, the condensed version is obtained by removing all zeros from each row and merging adjacent non-zero elements. The resulting array is [[8, 0], [0, 8]].

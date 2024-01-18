@@ -1,0 +1,37 @@
+GPT4 Correct User: Case 0:
+Input:
+[[1, 2], [3, 8]]
+
+Output:
+[[0, 1, 2, 0], [1, 1, 2, 2], [3, 3, 8, 8], [0, 3, 8, 0]]
+
+Case 1:
+Input:
+[[1, 8, 4], [8, 3, 8]]
+
+Output:
+[[0, 1, 8, 4, 0], [1, 1, 8, 4, 4], [8, 8, 3, 8, 8], [0, 8, 3, 8, 0]]
+
+Case 2:
+Input:
+[[2, 1, 4], [8, 0, 2], [3, 2, 8]]
+
+Output:
+[[0, 2, 1, 4, 0], [2, 2, 1, 4, 4], [8, 8, 0, 2, 2], [3, 3, 2, 8, 8], [0, 3, 2, 8, 0]]
+
+Test Case:
+Input:
+[[2, 8], [1, 4], [3, 4]]
+
+Output: GPT4 Correct Assistant: [[0, 2, 8, 0], [1, 1, 4, 0], [3, 3, 4, 4], [0, 3, 4, 0]]
+
+Explanation: 
+In each case, we are given a list of lists, where each inner list represents a row of a matrix. The task is to extend each inner list by adding an extra zero at the end. This is done to ensure that each row of the resulting matrix has the same length, which is the total sum of all the rows. 
+
+For example, in the first case, the total sum of all the rows is 14, so we add an extra zero to each row to make the matrix a 4x4 matrix. 
+
+Similarly, in the second case, the total sum of all the rows is 18, so we add an extra zero to each row to make the matrix a 4x4 matrix. 
+
+In the third case, the total sum of all the rows is 16, so we add an extra zero to each row to make the matrix a 4x4 matrix. 
+
+The same logic applies to the test case, where the total sum of all the rows is 12, so we add an extra zero to each row to make the matrix a 4x4 matrix.

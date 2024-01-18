@@ -1,0 +1,37 @@
+GPT4 Correct User: Case 0:
+Input:
+[[0, 0, 8, 0], [0, 8, 0, 8], [0, 0, 8, 0]]
+
+Output:
+[[0, 0, 8, 0, 0, 8, 0, 0], [0, 8, 0, 8, 8, 0, 8, 0], [0, 0, 8, 0, 0, 8, 0, 0], [0, 0, 8, 0, 0, 8, 0, 0], [0, 8, 0, 8, 8, 0, 8, 0], [0, 0, 8, 0, 0, 8, 0, 0]]
+
+Case 1:
+Input:
+[[0, 0, 3, 3], [0, 3, 0, 3], [3, 3, 3, 0]]
+
+Output:
+[[0, 0, 3, 3, 3, 3, 0, 0], [0, 3, 0, 3, 3, 0, 3, 0], [3, 3, 3, 0, 0, 3, 3, 3], [3, 3, 3, 0, 0, 3, 3, 3], [0, 3, 0, 3, 3, 0, 3, 0], [0, 0, 3, 3, 3, 3, 0, 0]]
+
+Case 2:
+Input:
+[[3, 3, 3, 3], [3, 0, 0, 0], [3, 0, 0, 0]]
+
+Output:
+[[3, 3, 3, 3, 3, 3, 3, 3], [3, 0, 0, 0, 0, 0, 0, 3], [3, 0, 0, 0, 0, 0, 0, 3], [3, 0, 0, 0, 0, 0, 0, 3], [3, 0, 0, 0, 0, 0, 0, 3], [3, 3, 3, 3, 3, 3, 3, 3]]
+
+Test Case:
+Input:
+[[4, 0, 0, 0], [0, 0, 0, 4], [4, 4, 0, 0]]
+
+Output: GPT4 Correct Assistant: [[4, 0, 0, 0, 4, 0, 0, 0], [0, 0, 0, 4, 0, 0, 4, 0], [4, 4, 0, 0, 0, 4, 0, 0], [4, 4, 0, 0, 0, 4, 0, 0], [0, 0, 0, 4, 0, 0, 4, 0], [0, 0, 0, 4, 0, 0, 4, 0]]
+
+Explanation: 
+In each of the given cases, the input is a 3x3 matrix where each row represents a layer of a 3D cube. The output is a 4x4x4 matrix, which is the cube rotated by 90 degrees. In each layer of the output matrix, the values from the corresponding layers of the input matrix are repeated. 
+
+For example, in the first case, the input matrix is:
+[[0, 0, 8, 0], [0, 8, 0, 8], [0, 0, 8, 0]]
+
+The output matrix is:
+[[0, 0, 8, 0, 0, 8, 0, 0], [0, 8, 0, 8, 8, 0, 8, 0], [0, 0, 8, 0, 0, 8, 0, 0], [0, 0, 8, 0, 0, 8, 0, 0], [0, 8, 0, 8, 8, 0, 8, 0], [0, 0, 8, 0, 0, 8, 0, 0]]
+
+The same logic applies to the other cases as well.

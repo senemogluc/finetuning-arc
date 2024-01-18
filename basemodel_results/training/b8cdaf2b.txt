@@ -1,0 +1,127 @@
+GPT4 Correct User: Case 0:
+Input:
+[[0, 0, 0], [0, 2, 0], [2, 4, 2]]
+
+Output:
+[[4, 0, 4], [0, 2, 0], [2, 4, 2]]
+
+Case 1:
+Input:
+[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 8, 0, 0], [8, 8, 3, 8, 8]]
+
+Output:
+[[0, 0, 0, 0, 0], [3, 0, 0, 0, 3], [0, 3, 0, 3, 0], [0, 0, 8, 0, 0], [8, 8, 3, 8, 8]]
+
+Case 2:
+Input:
+[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [0, 6, 6, 6, 0], [6, 1, 1, 1, 6]]
+
+Output:
+[[0, 0, 0, 0, 0], [0, 0, 0, 0, 0], [1, 0, 0, 0, 1], [0, 6, 6, 6, 0], [6, 1, 1, 1, 6]]
+
+Case 3:
+Input:
+[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 2, 2, 2, 0, 0], [2, 2, 4, 4, 4, 2, 2]]
+
+Output:
+[[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [4, 0, 0, 0, 0, 0, 4], [0, 4, 0, 0, 0, 4, 0], [0, 0, 2, 2, 2, 0, 0], [2, 2, 4, 4, 4, 2, 2]]
+
+Test Case:
+Input:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 8, 8, 8, 0, 0, 0], [8, 8, 8, 2, 2, 2, 8, 8, 8]]
+
+Output: GPT4 Correct Assistant: Here are the detailed steps to solve the problem:
+
+1. Initialize an empty matrix of the same size as the input matrix with all elements set to 0. This will be the result matrix.
+2. Iterate through each row of the input matrix.
+3. For each row, find the column index with the smallest non-zero element. This column index will be stored in a variable called "min_col".
+4. If the element at the current row and the "min_col" is odd, perform the following steps:
+   a. Add the value at the current row and the "min_col" to the corresponding element in the result matrix.
+   b. Subtract the value at the current row and the "min_col" from all the elements in the same column of the input matrix.
+   c. Subtract the value at the current row and the "min_col" from all the elements in the same column of the result matrix.
+5. If the element at the current row and the "min_col" is even, perform the following steps:
+   a. Subtract the value at the current row and the "min_col" from all the elements in the same column of the input matrix.
+   b. Add the value at the current row and the "min_col" to all the elements in the same column of the result matrix.
+6. Repeat steps 3 to 5 for all rows of the input matrix.
+7. The resulting matrix is the desired output.
+
+Here's the Python code to implement the above steps:
+
+```python
+def modify_matrix(matrix):
+    result = [[0 for _ in range(len(matrix[0]))] for _ in range(len(matrix))]
+    
+    for i in range(len(matrix)):
+        min_col = min(range(len(matrix[0])), key=lambda x: matrix[i][x])
+        if matrix[i][min_col] % 2 == 0:
+            for j in range(len(matrix[0])):
+                result[i][j] += matrix[i][j]
+                matrix[i][j] -= matrix[i][min_col]
+                result[i][min_col] -= matrix[i][min_col]
+        else:
+            for j in range(len(matrix[0])):
+                result[i][j] -= matrix[i][j]
+                matrix[i][j] += matrix[i][min_col]
+                result[i][min_col] += matrix[i][min_col]
+    
+    return result
+```
+
+Now, let's apply this function to each test case:
+
+Test Case 1:
+
+```python
+input_matrix = [
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0],
+    [0, 0, 8, 0, 0],
+    [8, 8, 3, 8, 8]
+]
+
+output_matrix = modify_matrix(input_matrix)
+print(output_matrix)
+```
+
+Test Case 2:
+
+```python
+input_matrix = [
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0],
+    [0, 0, 2, 2, 2, 0],
+    [2, 2, 4, 4, 4, 2]
+]
+
+output_matrix = modify_matrix(input_matrix)
+print(output_matrix)
+```
+
+Test Case 3:
+
+```python
+input_matrix = [
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0]
+]
+
+output_matrix = modify_matrix(input_matrix)
+print(output_matrix)
+```
+
+Test Case 4:
+
+```python
+input_matrix = [
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,

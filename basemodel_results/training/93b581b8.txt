@@ -1,0 +1,38 @@
+GPT4 Correct User: Case 0:
+Input:
+[[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 9, 3, 0, 0], [0, 0, 7, 8, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]
+
+Output:
+[[8, 8, 0, 0, 7, 7], [8, 8, 0, 0, 7, 7], [0, 0, 9, 3, 0, 0], [0, 0, 7, 8, 0, 0], [3, 3, 0, 0, 9, 9], [3, 3, 0, 0, 9, 9]]
+
+Case 1:
+Input:
+[[0, 0, 0, 0, 0, 0], [0, 4, 6, 0, 0, 0], [0, 2, 1, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]
+
+Output:
+[[1, 0, 0, 2, 2, 0], [0, 4, 6, 0, 0, 0], [0, 2, 1, 0, 0, 0], [6, 0, 0, 4, 4, 0], [6, 0, 0, 4, 4, 0], [0, 0, 0, 0, 0, 0]]
+
+Case 2:
+Input:
+[[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 3, 6, 0, 0], [0, 0, 5, 2, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0]]
+
+Output:
+[[2, 2, 0, 0, 5, 5], [2, 2, 0, 0, 5, 5], [0, 0, 3, 6, 0, 0], [0, 0, 5, 2, 0, 0], [6, 6, 0, 0, 3, 3], [6, 6, 0, 0, 3, 3]]
+
+Test Case:
+Input:
+[[0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0], [0, 0, 3, 1, 0, 0], [0, 0, 2, 5, 0, 0], [0, 0, 0, 0, 0, 0]]
+
+Output: GPT4 Correct Assistant: Here are the detailed explanations for each case:
+
+Case 0:
+The input matrix is a 6x6 matrix with all 0s except for a 9 and a 7 in the third row, a 3 and a 7 in the fourth row, and a 9 and a 9 in the fifth row. The output matrix is obtained by swapping the columns in the first and second rows, and the columns in the fourth and fifth rows. The result is a matrix with all 0s except for a 8 and a 7 in the first row, an 8 and a 7 in the second row, a 9 and a 3 in the third row, a 7 and an 8 in the fourth row, a 3 and a 9 in the fifth row, and a 3 and a 9 in the sixth row.
+
+Case 1:
+The input matrix is a 6x6 matrix with all 0s except for a 4 and a 6 in the second row, a 2 and a 1 in the third row, and a 0 and a 0 in the fifth and sixth rows. The output matrix is obtained by swapping the rows in the second and third rows, and the columns in the second and fifth rows. The result is a matrix with all 0s except for a 1 and a 0 in the first row, a 4 and a 6 in the second row, a 2 and a 1 in the third row, a 6 and a 0 in the fourth row, a 6 and a 0 in the fifth row, and a 0 and a 0 in the sixth row.
+
+Case 2:
+The input matrix is a 6x6 matrix with all 0s except for a 3 and a 6 in the third row, a 5 and a 2 in the fourth row, and a 0 and a 0 in the fifth and sixth rows. The output matrix is obtained by swapping the rows in the third and fourth rows, and the columns in the third and fifth rows. The result is a matrix with all 0s except for a 2 and a 0 in the first row, a 2 and a 0 in the second row, a 3 and a 6 in the third row, a 5 and a 2 in the fourth row, a 6 and a 0 in the fifth row, and a 6 and a 0 in the sixth row.
+
+Test Case:
+The input matrix is a 6x6 matrix with all 0s except for a 3 and a 1 in the fourth row, a 2 and a 5 in the fifth row, and a 0 and a 0 in the sixth row. The output matrix is obtained by swapping the rows in the fourth and fifth rows, and the columns in the fourth and sixth rows. The result is a matrix with all 0s except for a 3 and a 0 in the first row, a 2 and a 0 in the second row, a 1 and a 2 in the third row, a 5 and a 3 in the fourth row, a 3 and a 5 in the fifth row, and a 0 and a 0 in the sixth row.
