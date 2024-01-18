@@ -1,5 +1,6 @@
 import json
 import os
+from arckit import Task, vis
 
 def task_to_prompt(task_json):
     with open(task_json, mode='r') as f:
@@ -41,8 +42,24 @@ def multiple_tasks_to_prompt(tasks_dir, out_json_dir):
         json.dump(json_dict, f)
 
 
-            
 
+def json_task_visualization(task_path):
+    with open (task_path) as f:
+        data = json.load(f)
+
+    data_name = task_path.split("/")[-3]
+    category = task_path.split("/")[-2]
+    task_name = task_path.split("/")[-1].split(".")[0]
+    print(category, task_name)
+
+    if not os.path.exists(f"images/{data_name}/{category}"):
+        os.makedirs(f"images/{data_name}/{category}")
+    
+    task = Task(id=task_name, train=data['train'], test=data['test'])
+    drawed_task = vis.draw_task(task, height=24, width=60)  
+    vis.output_drawing(drawed_task, f"images/{data_name}/{category}/{task_name}.png") 
+            
 if __name__ == "__main__":
     # print(task_to_prompt("data/training/0a938d79.json")[0])
     multiple_tasks_to_prompt("data/evaluation", "fine_tune_data/arc_aug_eval.json")
+    #json_task_visualization('data/ConceptARC/AboveBelow/AboveBelow9.json')
