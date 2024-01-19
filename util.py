@@ -62,4 +62,4 @@ def json_task_visualization(task_path):
 if __name__ == "__main__":
     # print(task_to_prompt("data/training/0a938d79.json")[0])
     # multiple_tasks_to_prompt("data/evaluation", "fine_tune_data/arc_aug_eval.json")
-    json_task_visualization('data/ConceptARC/AboveBelow/AboveBelow9.json')
+    json_task_visualization('data/ConceptARC/CompleteShape/CompleteShape7.json')

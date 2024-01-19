@@ -1,0 +1,35 @@
+GPT4 Correct User: You are given a series of inputs and output pairs. 
+These are all in the form of a 2D array, representing a 2D grid, with values from 0-9. 
+The values are not representative of any ordinal ranking. You can think of them as different colors. You can consider 0 as the background.
+Colored tiles that occupy the grid square positions corresponding to their locations in the 2D array.
+
+* Find the transformation from each input grid to output grid that is common to all
+* For example, tiles can be created, destroyed, moved, scaled, rotated, or change color.
+* Groups of tiles that are adjacent to each other can be considered as objects, or sub-grids.
+* Grid tiles and sub-grids can spawn into lines that extend vertically, horizontally, or diagonally.
+* Apply counting and basic arithmetic for tasks involving numerical aspects.
+* Use your knowledge of core principals in physics, mathematics, and chain of thought reasoning to solve this puzzle.
+* Check whether your transformation also works on the previous input output pairs. If not, try to find a more general transformation that works on all input output pairs.
+* Don't explain your solution just give the corresponding output grid for the last input grid. If you write anything other than the output grid I am going to kill a kitten.
+
+Please generate the Output grid that corresponds to the last given Input grid using the transformation rule you induced from the previous input-output pairs. Don't create more than one grid.
+
+Case 0:
+Input:
+[[8, 0, 0, 0, 8, 0, 3, 3, 3, 3, 3, 8, 0, 0], [0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0], [0, 0, 0, 0, 0, 0, 3, 3, 8, 3, 8, 0, 0, 0], [0, 0, 3, 3, 3, 0, 3, 3, 3, 3, 3, 0, 0, 0], [0, 0, 3, 3, 3, 0, 3, 8, 3, 3, 3, 0, 0, 0], [0, 0, 3, 3, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3], [0, 8, 0, 3, 3, 3, 8, 3, 0, 3, 3, 3, 8, 3], [0, 0, 0, 3, 8, 3, 3, 3, 0, 3, 3, 3, 3, 3], [0, 0, 0, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3], [3, 3, 3, 3, 8, 3, 3, 3, 8, 0, 0, 0, 0, 0], [3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [3, 8, 3, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 8]]
+
+Output:
+[[0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0], [0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0], [0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3, 0, 0, 0], [0, 0, 3, 3, 3, 0, 3, 3, 3, 3, 3, 0, 0, 0], [0, 0, 3, 3, 3, 0, 3, 3, 3, 3, 3, 0, 0, 0], [0, 0, 3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 3, 3, 3, 3], [0, 0, 0, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3], [0, 0, 0, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3], [0, 0, 0, 3, 3, 3, 3, 3, 0, 3, 3, 3, 3, 3], [3, 3, 3, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0], [3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [3, 3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
+
+Case 1:
+Input:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 2, 2, 2, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 2, 2, 2, 2, 0, 0, 0, 0, 2, 1, 2, 2, 2, 2, 2], [0, 2, 2, 1, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2], [0, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2], [0, 2, 2, 2, 2, 1, 0, 0, 0, 2, 2, 2, 2, 2, 1, 2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0], [0, 1, 0, 2, 2, 2, 2, 2, 2, 1, 2, 2, 2, 0, 0, 0], [0, 0, 0, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 1], [0, 0, 0, 2, 2, 2, 2, 2, 2, 1, 2, 2, 1, 0, 0, 0], [0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0]]
+
+Output:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 2, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2], [0, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2], [0, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2], [0, 2, 2, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 2, 2, 2, 2, 2], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0], [0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0], [0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0], [0, 0, 0, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 0, 0]]
+
+Test Case:
+Input:
+[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 4, 5, 0], [0, 4, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 5, 5, 5, 5, 0], [0, 5, 4, 5, 5, 5, 5, 5, 5, 0, 0, 0, 5, 5, 5, 5, 0], [0, 5, 5, 5, 5, 5, 5, 5, 5, 0, 0, 0, 5, 5, 5, 5, 4], [0, 5, 5, 5, 5, 5, 5, 5, 5, 0, 0, 0, 5, 5, 5, 5, 0], [0, 5, 5, 5, 5, 5, 5, 4, 5, 0, 0, 0, 5, 5, 5, 5, 0], [0, 5, 5, 5, 5, 5, 5, 5, 5, 0, 0, 0, 5, 5, 4, 5, 0], [0, 5, 5, 5, 5, 4, 5, 5, 5, 0, 0, 0, 4, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0], [0, 0, 0, 0, 0, 0, 5, 5, 5, 5, 5, 4, 0, 0, 0, 0, 0], [0, 0, 0, 4, 0, 0, 5, 5, 5, 4, 5, 5, 0, 0, 0, 0, 0]]
+
+Output: GPT4 Correct Assistant: [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
